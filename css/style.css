@@ -39,6 +39,9 @@
 .logo_mobile{
     display: none;
 }
+#navBar2{
+    opacity: 0;
+}
 
 @media screen and (max-width: 990px){
     .logo_mobile{
@@ -48,7 +51,10 @@
         display: none;
     }
     .g-py-20 {
-      padding-top: 1rem !important;
+      padding-top: 1.42857rem !important;
       padding-bottom: 1rem !important;
+    }
+    #navBar2{
+        opacity: 1;
     }
 }
