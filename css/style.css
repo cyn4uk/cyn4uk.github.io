@@ -29,7 +29,24 @@ html, body{
     height: 100%;
     opacity: 0;
 }
-
+.fill_svg{
+    fill: #0a557f;
+}
+.fill_svg:hover{
+    fill: #219bc3;
+}
+.fill_svg_footer{
+    fill: #f0f0f0;
+}
+.fill_svg_footer:hover{
+    fill: #219bc3;
+}
+.box_icon{
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    background: #363642;
+}
 .portfolio:hover .block_black{
     opacity: 0.8;
     transition: opacity 3s;
