@@ -35,3 +35,20 @@
     overflow: hidden;
     transition: width 3s;
 }
+
+.logo_mobile{
+    display: none;
+}
+
+@media screen and (max-width: 990px){
+    .logo_mobile{
+        display: block;
+    }
+    #logo{
+        display: none;
+    }
+    .g-py-20 {
+      padding-top: 1rem !important;
+      padding-bottom: 1rem !important;
+    }
+}
