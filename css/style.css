@@ -1,3 +1,8 @@
+html, body{
+    margin: 0;
+    overflow-x: hidden;
+}
+
 .g-brd {
     border-bottom: 1px solid #343434;
 }
@@ -41,6 +46,11 @@
 }
 #navBar2{
     opacity: 0;
+}
+
+.icon_up{
+    width: 20px;
+    margin-top: 6px;
 }
 
 @media screen and (max-width: 990px){
