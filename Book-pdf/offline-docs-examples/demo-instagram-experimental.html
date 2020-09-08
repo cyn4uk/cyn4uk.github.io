@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Images from online source</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="example-assets/css/example.css" rel="stylesheet" type="text/css">
+
+    <!-- Flipbook StyleSheet -->
+    <link href="dflip/css/dflip.css" rel="stylesheet" type="text/css">
+
+    <!-- Icons Stylesheet -->
+    <link href="dflip/css/themify-icons.css" rel="stylesheet" type="text/css">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+        body{
+            padding: 20px;
+        }
+    </style>
+</head>
+<body >
+
+<div>When accessing images from other domain its best to set
+    <pre style="display: inline;"><code>isCrossOrigin: true </code></pre>
+    for for proper results in webGL
+</div>
+
+<a href="https://api.instagram.com/oauth/authorize/?client_id=9b36543e7cd7464891d44391df2eadda&redirect_uri=http://deipgroup.com/instabook&response_type=token">Authenticate</a>
+
+<div id="flipbookContainer"></div>
+
+<!-- jQuery 1.9.1 or above -->
+<script src="example-assets/js/jquery.min.js" type="text/javascript"></script>
+
+<!-- Flipbook main Js file -->
+<script src="dflip/js/dflip.js" type="text/javascript"></script>
+
+<script src="example-assets/js/jribbble.min.js" type="text/javascript"></script>
+
+<script>
+    var source = [];
+    var flipBook;
+//    9b36543e7cd7464891d44391df2eadda
+//    #access_token=2995025988.9b36543.e4dab10de9ae472995bff7e6e3a18694
+    var options = {
+        webgl: true,
+        height: 400,
+        duration: 800,
+
+        isCrossOrigin: false //buggy in IE
+    };
+    function loadImages(data){
+        jQuery.each(data.data, function (i, item) {
+            source.push(item.images.standard_resolution.url);
+        });
+
+        flipBook = $("#flipbookContainer").flipBook(source, options);
+    }
+
+    jQuery(document).ready(function () {
+        //make sure this file is hosted in localhost or any other server
+
+
+        var dribbbleUser = "amritbshahi";
+
+// NOTE: Don't use this token, replace it with your own client access token.
+//        $.jribbble.setToken('f688ac519289f19ce5cebc1383c15ad5c02bd58205cd83c86cbb0ce09170c1b4');
+
+
+
+/*        $.jribbble.shots('debuts', {
+            'per_page': 36,
+            'timeframe': 'month',
+            'sort': 'views'
+        }).then(function(res) {
+
+            var html = [];
+            res.forEach(function(shot) {
+                source.push(shot.images.normal);
+            });
+
+            flipBook = $("#flipbookContainer").flipBook(source, options);
+
+        });*/
+
+
+
+        //make sure the images are same size
+        //size is calculated based on first image
+//        $.getJSON("https://api.instagram.com/v1/users/2995025988/media/recent/?access_token=2995025988.9b36543.e4dab10de9ae472995bff7e6e3a18694", function (data) {
+//            $.each(data, function (i, item) {
+//                source.push(item.images.thumbnail.url);
+//            });
+//
+//            flipBook = $("#flipbookContainer").flipBook(source, options);
+//
+//        });
+
+
+    });
+</script>
+
+<script src="example-assets/js/example.js" type="text/javascript"></script>
+<script src="https://api.instagram.com/v1/users/2995025988/media/recent/?access_token=2995025988.9b36543.e4dab10de9ae472995bff7e6e3a18694&callback=loadImages" type="text/javascript"></script>
+
+<style>
+    .df-book-page .df-page-front, .df-book-page .df-page-back{
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+</style>
+
+</body>
+</html>

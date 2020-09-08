@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Custom Outline</title>
+  <link href="example-assets/css/example.css" rel="stylesheet" type="text/css">
+
+  <!-- Flipbook StyleSheet -->
+  <link href="dflip/css/dflip.css" rel="stylesheet" type="text/css">
+
+  <!-- Icons Stylesheet -->
+  <link href="dflip/css/themify-icons.css" rel="stylesheet" type="text/css">
+
+</head>
+<body style="padding: 20px">
+<p>Images needs to be hosted on same server(localhost or online) or they will appear black if available white if not
+  available..</p>
+
+<p>Create outline and contain links to page within the book or online url.<br> Plus you can create nested outlines.</p>
+
+<div id="flipbookContainer" style="max-width:800px;margin:0 auto;"></div>
+<!--Thumbnail Lightbox-->
+<div
+        class="_df_thumb"
+        id="df_manual_thumb"
+        tags="3d,images"
+        source="http://localhost/MLM23_TOTAAL_OUTLINE_DIGITAAL-test-reduced.pdf"
+        thumb="example-assets/books/thumbs/dflip.jpg"><!--Recommend using absolute path to PDFs-->
+
+</div>
+<!-- jQuery 1.9.1 or above -->
+<script src="dflip/js/libs/jquery.min.js" type="text/javascript"></script>
+
+<!-- Flipbook main Js file -->
+<script src="dflip/js/dflip.js" type="text/javascript"></script>
+
+
+<script>
+
+var option_df_manual_thumb = {
+  height:500,webgl:false,backgroundColor:"teal",search:true,
+  // rangeChunkSize:128000,
+};
+  var imageFlipBook;
+  jQuery(document).ready(function () {
+    var options = {
+      height: 450,
+      crossOrigin:true,
+      search:true,
+      webgl: false,
+      enableDownload: false,
+      duration: 800,
+      // isCrossOrigin : true,
+      // rangeChunkSize:128000,
+      backgroundColor: "#eee",
+      autoEnableOutline: true //auto open the outline/bookmarks tab
+    };
+
+    var images = ["https://res.cloudinary.com/dfx1qetya/image/upload/v1551970121/zqcx3tag4aupolvs3ybp.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970123/ecrsbpditepfoz3hx6bv.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970125/o1jmb8ev4n3gkbshz1gi.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970126/iinr2b7q1n5vvrkuo6fr.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970128/vjg3kioxtvq1gy6njtmq.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970129/lpolqfwzgdtot6iicmij.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970131/rxolwgm8vcw91vcqibly.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970271/qdbb9ddqsqmooiqnroaw.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970272/jzqydyxlbjelzjkgrwrq.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970274/sha5nbqeflgfa7bm1itu.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970276/dhiokeulqoxjnci0itli.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970277/w59keeksnr0muiw6oova.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970278/butn2txujaj3nge3bv5r.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970280/ro0mtivrdlqdtyu7kdz2.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970281/ewfay5d8le0kmtj12egl.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970283/j2pvvtxhozgqsry1ej8f.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970285/swsgfbj3bmfcbhdsgxrp.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970286/ssnsv11scj84ikqn9pkr.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970288/ayqmux1c6brzm4vyeubv.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970289/rzafr0orw9sh1jinnjbw.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970291/ea7x0il9i3gr9t6xlosd.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970293/r9mkzepzfibqhrdw5ehu.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970294/alz6zly1mmatpa12mmub.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970296/mcbpifhked1yx5dzklni.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970297/voakbc4yklqvitfklwsr.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970299/nzn6prttoaoonwq0oywq.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970301/azjusg57swrhh0jiosjv.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970303/bsuzzvhkl86jl9ygfxuq.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970304/mo7vmuxd45dbzh3fns1u.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970306/ynwfun8lc9oigj9qvhbh.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970308/vddhb9wfgc3nt5kcwqj1.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970309/lr9jpydg6uo3osr5es9u.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970311/aoxwsouuhhavjvu5ndjz.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970313/xncooznlk1ipb49ko3ei.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970314/jmdtgb54xb342gchd0om.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970316/wo8boj92fnnerzx2heey.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970317/nlwv06six0tn45bnbq0v.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970319/rwre0ktwnov8yzcxwwnq.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970321/g1ftnmxxku5mjjyfjsra.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970322/ftm1j5kirzdrmkpglscp.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970324/pzgnlksgbzuxauj9wqnn.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970325/anx8frjrsgucnsgpdl1v.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970429/nbtxzt17susfnxoawwpz.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970430/wxeluvazi0anqy3ebtbj.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970432/tyycihdiwfrxc0tcx3su.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970434/bql7oqalosyzweeod44m.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970435/dzpnmorw65jzma5y0jul.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970437/lzktvm90o2kzbdmzrzt5.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970439/yg0s7yymnkvh1rbg1ik6.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970440/tsu6zptsnxgutyde3les.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970442/we8bygrzjdnaf6p34k0y.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970444/l3njqtr75ni1ringt5zk.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970445/g5gpfdqocxzv0qp2no46.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970447/lh05xdtkdrjkctdm8nen.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970449/prrwsns199ixfh6uitv7.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970450/d6wkuro7f2hxvzio2wub.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970452/fovh3apnrvvdgav7gy4o.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970454/w5cqhfcgwnufbhqqslux.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970455/vrrjf9ejoo0xoeovdhis.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970457/klkfulixqyxnena9bgr0.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970460/mbk3kgxktj1e3v8etusc.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970462/rxpyxk8reuemfs339dqh.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970464/bmbp5i1jw4etyngbj33m.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970466/epzkrc7macaueorzt4xi.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970468/n6y2zsx13alouwc2rsp8.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970470/g5movzmx496kxd1vjbzj.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970471/th3ptnkzviiubvayjzrr.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970473/lueekl1r1aman7y9rjrd.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970475/sxf7jfuvbyzsirgxzolj.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970476/xcom964mald1ykkbnuyp.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970478/mi4vlwy5oebdniz6hycm.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970480/sxbyzihauwc9zgcyjilm.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970482/bnjxeeursijwosbixmky.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970483/gflsvx933yup7aotwxue.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970485/mnvnccvokd38wyhlipze.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970487/aolnisxqclm8pqqvtaex.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970488/tlkrrduh7sadgynsekuh.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970490/dwatkc99wqa4ub9svy7w.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970492/ocz3dt9nyx7n0s1xp3un.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970494/ikwy72rhcbzfiobxrhyy.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970496/pcyve73tdmty60m02pbs.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970498/cbpmujvovafkiz3yzx0x.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970499/dgijca1zpnjxb1bxvg9i.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970501/cpvq7p00uoijidlpmk0x.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970503/jhbew73sdfmjhwhvlknj.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970505/oglngppdrrwxo7ag9dex.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970506/zfw7vcsdflg7qumigdfa.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970508/x37skueenbyppguhac6p.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970510/e0lkkua9qh4hljrllhkp.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970512/dv6quy9iwwucwc6dkpcx.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970514/jdsupsynbdxr2seqidrs.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970515/kosuajynuyy0gqlw5ajr.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970517/jmct26kxjuhlhj8wxgit.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970519/uftkcxj5jmvdsnrzyyva.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970520/t6hv5o0aktqf6oxidkdh.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970521/eycdam3errn0ewrzi2zp.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970523/ezytwedkipvtlvc1eu5r.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970524/xrelcojydy5lmytku48r.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970526/ulc6tqncg0j9ktpuwpat.jpg", "https://res.cloudinary.com/dfx1qetya/image/upload/v1551970527/raa0fmx0d2b4ux3099cq.jpg"];
+
+
+    images = ["https://ta-storage.s3.amazonaws.com/prod/magazines/magazine-1-des-exercices-enonce/image-1.jpg", "https://ta-storage.s3.amazonaws.com/prod/magazines/magazine-1-des-exercices-enonce/image-2.jpg", "https://ta-storage.s3.amazonaws.com/prod/magazines/magazine-1-des-exercices-enonce/image-3.jpg", "https://ta-storage.s3.amazonaws.com/prod/magazines/magazine-1-des-exercices-enonce/image-4.jpg", "https://ta-storage.s3.amazonaws.com/prod/magazines/magazine-1-des-exercices-enonce/image-5.jpg", "https://ta-storage.s3.amazonaws.com/prod/magazines/magazine-1-des-exercices-enonce/image-6.jpg", "https://ta-storage.s3.amazonaws.com/prod/magazines/magazine-1-des-exercices-enonce/image-7.jpg", "https://ta-storage.s3.amazonaws.com/prod/magazines/magazine-1-des-exercices-enonce/image-8.jpg", "https://ta-storage.s3.amazonaws.com/prod/magazines/magazine-1-des-exercices-enonce/image-9.jpg", "https://ta-storage.s3.amazonaws.com/prod/magazines/magazine-1-des-exercices-enonce/image-10.jpg", "https://ta-storage.s3.amazonaws.com/prod/magazines/magazine-1-des-exercices-enonce/image-11.jpg", "https://ta-storage.s3.amazonaws.com/prod/magazines/magazine-1-des-exercices-enonce/image-12.jpg", "https://ta-storage.s3.amazonaws.com/prod/magazines/magazine-1-des-exercices-enonce/image-13.jpg"];
+    /**
+     * outline is basically a array of json object as:
+     * {title:"title to appear",dest:"url as string or page as number",items:[]}
+     * items is the same process again array of json objects
+     */
+    options.outline = [
+      {title: "Alice in WonderLand", dest: 1},
+      {title: "Dflip manual", dest: 2},
+      {title: "NightAngle", dest: 2},
+      {
+        title: "About DeipGroup", dest: "https://twitter.com/deipgroup", items: [
+        {title: "Follow in Twitter", dest: "https://twitter.com/deipgroup"},
+        {title: "Like us", dest: "https://www.facebook.com/Deip.Group/"}
+      ]
+      }
+    ];
+
+    imageFlipBook = $("#flipbookContainer").flipBook(images, options);
+  });
+</script>
+
+<script src="example-assets/js/example.js" type="text/javascript"></script>
+</body>
+</html>
