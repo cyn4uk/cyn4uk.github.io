@@ -18,95 +18,18 @@
 
 </head>
 <body>
-<div class="content absolute-stretch">
-    <div class="upper-fold">
-
-        <section class="select-book"> Select a book below to start with</section>
-
-        <section class="_df_books">
 
             <div class="_df_books-break">Book thumb</div>
-
-            <!--Thumbnail Lightbox Usage-->
-            <!--
-            class : "_df_thumb" class is required for parsing book thumbs
-
-            df-source : link to the pdf source file
-            id : "df_(id-name)" required to detect the options if custom options are used. options variable will ve "option_(id-name)"
-            df-tags: tags are used above the thumb
-            df-thumb : link to the thumbnail for preview
-
-            -->
             <div class="_df_thumb"
                  source="example-assets/books/dflip manual.pdf"
                  id="df_manual"
                  tags="CSS,pdf"
                  thumb="example-assets/books/thumbs/dflip.jpg">
                 dFlip Old Manual</div>
-            <!--setting options "option_df_alice" is below in code-->
 
-
-            <!--Thumbnail Lightbox Usage Images-->
-            <!--
-            class : "_df_thumb" class is required for parsing book thumbs
-
-            df-source : link to the pdf source file removed for image source
-            id : "df_(id-name)" required to detect the options if custom options are used. options variable will ve "option_(id-name)"
-            df-tags: tags are used above the thumb
-            df-thumb : link to the thumbnail for preview
-
-            -->
-            <div class="_df_thumb"
-                 id="df_images"
-                 tags="3d,images"
-                 thumb="example-assets/books/thumbs/alice.jpg">
-                Images</div>
-            <!--setting options "option_df_images" is below in code-->
-
-
-            <div class="_df_books-break">Button</div>
-
-            <!--Button Lightbox Usage-->
-            <!--
-            class : "_df_button" class is required for parsing buttons
-
-            df-source : link to the pdf source file
-            id : "df_(id-name)" required to detect the options if custom options are used. options variable will ve "option_(id-name)"
-
-            -->
-            <div class="_df_button"
-                 source="example-assets/books/intro.pdf"
-                 id="df_intro_button">
-                Intro Book 3D PDF</div>
-
-            <div class="_df_button" webgl="false" backgroundcolor="#d4e5de"
-                 source="example-assets/books/glfw.pdf"
-                 id="df_glfw_button">
-                GLFW Manual</div>
-            <!--If flipbooks are to be run by images you can use options-->
-
-            <div class="_df_books-break">Custom Element</div>
-            <!--Use any element(a,img,div) to create a flipbook add style as per your need -->
-            <a class="_df_custom" backgroundcolor = "#019292" webgl="false"
-                 source="example-assets/books/Pollyanna.pdf"
-                 id="df_book_custom">
-                Custom element Click here</a>
-
-        </section>
-    </div>
-
-</div>
-<!-- Container is not required for lightbox -->
-<!--<div id="flipbookContainer"></div>-->
-
-<!-- jQuery 1.9.1 or above -->
 <script src="dflip/js/libs/jquery.min.js" type="text/javascript"></script>
-
-<!-- Flipbook main Js file -->
 <script src="dflip/js/dflip.js" type="text/javascript"></script>
-
 <script src="dflip/js/libs/pdf.js" type="text/javascript"></script>
-<!--<script src="dflip/js/libs/mockup.min.js" type="text/javascript"></script>-->
 
 <script>
 
@@ -118,8 +41,6 @@ var option_df_images = {
     source:['example-assets/books/thumbs/alice.jpg', 'example-assets/books/thumbs/dflip.jpg' , 'example-assets/books/thumbs/nightangle.jpg']
 };
 </script>
-
-<script src="example-assets/js/example.js" type="text/javascript"></script>
 
 <style>
     #df_book_custom{
