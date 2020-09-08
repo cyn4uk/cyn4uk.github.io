@@ -1,3 +1,0 @@
-Pdf in this example is pulled from online 'https://mozilla.github.io/pdf.js/web/compressed.tracemonkey-pldi-09.pdf'. 
-
-Or PDF needs to be hosted on same server(localhost or online) or they won't work
