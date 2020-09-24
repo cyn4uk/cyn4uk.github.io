@@ -70,6 +70,15 @@ html, body{
     margin-top: 6px;
 }
 
+.bg-img-header{
+    background: url("../img/img-start.gif") center no-repeat;
+    background-size: 100%;
+}
+.bg-img-content{
+    background: url("../img/fon.gif") top no-repeat;
+    background-size: 100%;
+}
+
 @media screen and (max-width: 990px){
     .logo_mobile{
         display: block;
