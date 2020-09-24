@@ -1,3 +1,5 @@
+@import "media.css";
+
 html, body{
     margin: 0;
     overflow-x: hidden;
@@ -6,12 +8,7 @@ html, body{
 .g-brd {
     border-bottom: 1px solid #343434;
 }
-.g-color-navyblue{
-    color: #0a557f;
-}
-.g-color-maline{
-    color: #219bc3;
-}
+
 .size-50px{
     width: 50px;
 }
@@ -79,18 +76,3 @@ html, body{
     background-size: 100%;
 }
 
-@media screen and (max-width: 990px){
-    .logo_mobile{
-        display: block;
-    }
-    #logo{
-        display: none;
-    }
-    .g-py-20 {
-      padding-top: 1.42857rem !important;
-      padding-bottom: 1rem !important;
-    }
-    #navBar2{
-        opacity: 1;
-    }
-}

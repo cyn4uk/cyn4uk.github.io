@@ -1,0 +1,45 @@
+@media screen and (max-width: 4000px){
+    .fon-big{
+        display: block;
+    }
+    .fon-middle, .fon-small, .fon-mobile{
+        display: none;
+    }
+}
+@media screen and (max-width: 1560px){
+    .fon-middle{
+        display: block;
+    }
+    .fon-big, .fon-small, .fon-mobile{
+        display: none;
+    }
+}
+@media screen and (max-width: 1300px){
+    .fon-small{
+        display: block;
+    }
+    .fon-big, .fon-middle, .fon-mobile{
+        display: none;
+    }
+}
+@media screen and (max-width: 990px){
+    .logo_mobile{
+        display: block;
+    }
+    #logo{
+        display: none;
+    }
+    .g-py-20 {
+      padding-top: 1.42857rem !important;
+      padding-bottom: 1rem !important;
+    }
+    #navBar2{
+        opacity: 1;
+    }
+    .fon-mobile{
+        display: block;
+    }
+    .fon-big, .fon-middle, .fon-small{
+        display: none;
+    }
+}
