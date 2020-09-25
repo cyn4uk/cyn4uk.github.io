@@ -1,124 +1,23 @@
-// I hope this over-commenting helps. Let's do this!
-// Let's use the 'active' variable to let us know when we're using it
-let active = false;
-// and define our dom elements to make it easier to read
-let scrollerMiddle = document.querySelector('.scroller-middle');
-let scrollerTop = document.querySelector('.scroller-top');
-
-
-// First we'll have to set up our event listeners
-// We want to watch for clicks on our scroller
-scrollerMiddle.addEventListener('mousedown',function(){
-  active = "middle";
-  // Add our scrolling class so the scroller has full opacity while active
-  scrollerMiddle.classList.add('scrolling');
-});
-// We also want to watch the body for changes to the state,
-// like moving around and releasing the click
-// so let's set up our event listeners
-document.body.addEventListener('mouseup',function(){
-  active = false;
-  scrollerMiddle.classList.remove('scrolling');
-});
-document.body.addEventListener('mouseleave',function(){
-  active = false;
-  scrollerMiddle.classList.remove('scrolling');
-});
-// We'll have to do the same for our top scroller
-scrollerTop.addEventListener('mousedown',function(){
-    active = "top";
-    scrollerTop.classList.add('scrolling');
-});
-document.body.addEventListener('mouseup',function(){
-  active = false;
-  scrollerTop.classList.remove('scrolling');
-});
-document.body.addEventListener('mouseleave',function(){
-  active = false;
-  scrollerTop.classList.remove('scrolling');
-});
-
-// Let's figure out where their mouse is at
-document.body.addEventListener('mousemove',function(e){
-  if (!active) return;
-  // Their mouse is here...
-  let x = e.pageX;
-  // but we want it relative to our wrapper
-  x -= document.querySelector('.wrapper').getBoundingClientRect().left;
-  // Okay let's change our state
-  scrollIt(x);
-});
-
-// Let's use this function
-function scrollIt(x){
-  // Calculate our transform
-  let transform = Math.max(0,(Math.min(x,document.querySelector('.wrapper').offsetWidth)));
-  // we show all our bottom image but how much of our middle and top,
-  // that'll depend on what we're dragging
-  // if we're dragging the middle slider
-  if (active==="middle"){
-    document.querySelector('.middle').style.width = transform+"px";
-    scrollerMiddle.style.left = transform-25+"px";
-    // if we're using scroller-middle, middle must always be to the right of top
-    if (scrollerTop.getBoundingClientRect().left>scrollerMiddle.getBoundingClientRect().left-5){
-      document.querySelector('.top').style.width = transform-5+"px";
-      scrollerTop.style.left = transform-30+"px";
+(function() {
+  // Tutorial: https://medium.com/@PatrykZabielski/how-to-make-multi-layered-parallax-illustration-with-css-javascript-2b56883c3f27
+  window.addEventListener('scroll', function(event) {
+    var depth, i, layer, layers, len, movement, topDistance, translate3d;
+    topDistance = this.pageYOffset;
+    layers = document.querySelectorAll("[data-type='parallax']");
+    for (i = 0, len = layers.length; i < len; i++) {
+      layer = layers[i];
+      depth = layer.getAttribute('data-depth');
+      movement = -(topDistance * depth);
+      translate3d = 'translate3d(0, ' + movement + 'px, 0)';
+      layer.style['-webkit-transform'] = translate3d;
+      layer.style['-moz-transform'] = translate3d;
+      layer.style['-ms-transform'] = translate3d;
+      layer.style['-o-transform'] = translate3d;
+      layer.style.transform = translate3d;
     }
-  }
-  // if we're dragging the top slider
-  if (active==="top"){
-    document.querySelector('.top').style.width = transform+"px";
-    scrollerTop.style.left = transform-25+"px";
-    // if we're using scroller-top, top must always be to the left
-    if (scrollerTop.getBoundingClientRect().left>scrollerMiddle.getBoundingClientRect().left-5){
-      document.querySelector('.middle').style.width = transform+5+"px";
-      scrollerMiddle.style.left = transform-20+"px";
-    }
-  }
-}
+  });
 
-// Let's set our opening state based off the width, 
-// we want to show a bit of both images so the user can see what's going on
-active = "middle";
-scrollIt(460);
-active = "top";
-scrollIt(230);
-active = false;
+}).call(this);
 
-
-// And finally let's repeat the process for touch events
-// first our middle scroller...
-scrollerMiddle.addEventListener('touchstart',function(){
-    active = "middle";
-    scrollerMiddle.classList.add('scrolling');
-});
-document.body.addEventListener('touchend',function(){
-    active = false;
-    scrollerMiddle.classList.remove('scrolling');
-});
-document.body.addEventListener('touchcancel',function(){
-    active = false;
-    scrollerMiddle.classList.remove('scrolling');
-});
-
-// then scroller top, our second scroller
-scrollerTop.addEventListener('touchstart',function(){
-    active = "top";
-    scrollerTop.classList.add('scrolling');
-});
-document.body.addEventListener('touchend',function(){
-    active = false;
-    scrollerTop.classList.remove('scrolling');
-});
-document.body.addEventListener('touchcancel',function(){
-    active = false;
-    scrollerTop.classList.remove('scrolling');
-});
-
-document.querySelector('.wrapper').addEventListener('touchmove',function(e){
-    if (!active) return;
-    e.preventDefault();
-    let x = e.touches[0].pageX;
-    x -= document.querySelector('.wrapper').getBoundingClientRect().left;
-    scrollIt(x);
-});
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiPGFub255bW91cz4iXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFBQTtFQUVBLE1BQU0sQ0FBQyxnQkFBUCxDQUF3QixRQUF4QixFQUFrQyxRQUFBLENBQUMsS0FBRCxDQUFBO0FBQ2hDLFFBQUEsS0FBQSxFQUFBLENBQUEsRUFBQSxLQUFBLEVBQUEsTUFBQSxFQUFBLEdBQUEsRUFBQSxRQUFBLEVBQUEsV0FBQSxFQUFBO0lBQUEsV0FBQSxHQUFjLElBQUMsQ0FBQTtJQUNmLE1BQUEsR0FBUyxRQUFRLENBQUMsZ0JBQVQsQ0FBMEIsd0JBQTFCO0lBRVQsS0FBQSx3Q0FBQTs7TUFDRSxLQUFBLEdBQVEsS0FBSyxDQUFDLFlBQU4sQ0FBbUIsWUFBbkI7TUFDUixRQUFBLEdBQVcsQ0FBQyxDQUFDLFdBQUEsR0FBYyxLQUFmO01BQ1osV0FBQSxHQUFjLGlCQUFBLEdBQW9CLFFBQXBCLEdBQStCO01BQzdDLEtBQUssQ0FBQyxLQUFNLENBQUEsbUJBQUEsQ0FBWixHQUFtQztNQUNuQyxLQUFLLENBQUMsS0FBTSxDQUFBLGdCQUFBLENBQVosR0FBZ0M7TUFDaEMsS0FBSyxDQUFDLEtBQU0sQ0FBQSxlQUFBLENBQVosR0FBK0I7TUFDL0IsS0FBSyxDQUFDLEtBQU0sQ0FBQSxjQUFBLENBQVosR0FBOEI7TUFDOUIsS0FBSyxDQUFDLEtBQUssQ0FBQyxTQUFaLEdBQXdCO0lBUjFCO0VBSmdDLENBQWxDO0FBRkEiLCJzb3VyY2VzQ29udGVudCI6WyIjIFR1dG9yaWFsOiBodHRwczovL21lZGl1bS5jb20vQFBhdHJ5a1phYmllbHNraS9ob3ctdG8tbWFrZS1tdWx0aS1sYXllcmVkLXBhcmFsbGF4LWlsbHVzdHJhdGlvbi13aXRoLWNzcy1qYXZhc2NyaXB0LTJiNTY4ODNjM2YyN1xuXG53aW5kb3cuYWRkRXZlbnRMaXN0ZW5lciAnc2Nyb2xsJywgKGV2ZW50KSAtPlxuICB0b3BEaXN0YW5jZSA9IEBwYWdlWU9mZnNldCBcbiAgbGF5ZXJzID0gZG9jdW1lbnQucXVlcnlTZWxlY3RvckFsbChcIltkYXRhLXR5cGU9J3BhcmFsbGF4J11cIilcbiAgXG4gIGZvciBsYXllciBpbiBsYXllcnNcbiAgICBkZXB0aCA9IGxheWVyLmdldEF0dHJpYnV0ZSgnZGF0YS1kZXB0aCcpXG4gICAgbW92ZW1lbnQgPSAtKHRvcERpc3RhbmNlICogZGVwdGgpXG4gICAgdHJhbnNsYXRlM2QgPSAndHJhbnNsYXRlM2QoMCwgJyArIG1vdmVtZW50ICsgJ3B4LCAwKSdcbiAgICBsYXllci5zdHlsZVsnLXdlYmtpdC10cmFuc2Zvcm0nXSA9IHRyYW5zbGF0ZTNkXG4gICAgbGF5ZXIuc3R5bGVbJy1tb3otdHJhbnNmb3JtJ10gPSB0cmFuc2xhdGUzZFxuICAgIGxheWVyLnN0eWxlWyctbXMtdHJhbnNmb3JtJ10gPSB0cmFuc2xhdGUzZFxuICAgIGxheWVyLnN0eWxlWyctby10cmFuc2Zvcm0nXSA9IHRyYW5zbGF0ZTNkXG4gICAgbGF5ZXIuc3R5bGUudHJhbnNmb3JtID0gdHJhbnNsYXRlM2RcbiAgcmV0dXJuIl19
+//# sourceURL=coffeescript
