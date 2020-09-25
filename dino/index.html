@@ -13,26 +13,59 @@
 </head>
 <body>
 <main>
-  <section>
-      <div class="wrapper container">
-          <div class="bottom"><img src="img/dino/3.jpg" draggable="false"/></div>
-          <div class="middle"><img src="img/dino/2.jpg" draggable="false"/></div>
-          <div class="scroller scroller-middle">
-            <svg class="scroller__thumb" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
-              <polygon points="0 50 37 68 37 32 0 50" style="fill:#FFCCBC"/><polygon points="100 50 64 32 64 68 100 50" style="fill:#FFCCBC"/>
-            </svg>
-          </div>
-          <div class="top"><img src="img/dino/1.jpg" draggable="false"/></div>
-          <div class="scroller scroller-top">
-            <svg class="scroller__thumb" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
-              <polygon points="0 50 37 68 37 32 0 50" style="fill:#FFAB91"/><polygon points="100 50 64 32 64 68 100 50" style="fill:#FFAB91"/>
-            </svg>
-          </div>
+    <section>
+        <div class="wrapper container">
+            <div class="position-absolute menu-img w-100">
+                <ul class="float-right mr-5">
+                    <li class="list-stt"><a href="javascript:l_image('img/dino/1.jpg')"><img class="menu-img-color" src="img/icon/buttom-standart.svg"></a></li>
+                    <li class="list-stt"><a href="javascript:l_image('img/dino/1-green.jpg')"><img class="menu-img-color" src="img/icon/buttom-green.svg"></a></li>
+                    <li class="list-stt"><a href="javascript:l_image('img/dino/1-blue.jpg')"><img class="menu-img-color" src="img/icon/buttom-blue.svg"></a></li>
+                </ul>
+                <!--<div class="menu-img-color" style="background: url(img/icon/buttom-green.svg) no-repeat; background-size: 100%"></div>-->
+                <!--<div class="menu-img-color" style="background: url(img/icon/buttom-blue.svg) no-repeat; background-size: 100%"></div>-->
+            </div>
+            <div class="bottom"><img src="img/dino/3.jpg" draggable="false"/></div>
+            <div class="middle"><img src="img/dino/2.jpg" draggable="false"/></div>
+            <div class="scroller scroller-middle">
+                <svg class="scroller__thumb" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+                    <polygon points="0 50 37 68 37 32 0 50" style="fill:#FFCCBC"/><polygon points="100 50 64 32 64 68 100 50" style="fill:#FFCCBC"/>
+                </svg>
+            </div>
+            <div class="top"><img src="img/dino/1.jpg" draggable="false" name="example_img"/></div>
+            <div class="scroller scroller-top">
+                <svg class="scroller__thumb" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+                    <polygon points="0 50 37 68 37 32 0 50" style="fill:#FFAB91"/><polygon points="100 50 64 32 64 68 100 50" style="fill:#FFAB91"/>
+                </svg>
+            </div>
         </div>
-  </section>
+    </section>
+
+<!--<section class="position-absolute">-->
+    <!--<table style="width: 100%;">-->
+        <!--<tr style="text-align: center; vertical-align: center;">-->
+            <!--<td style="width: 50%;">-->
+                <!--<a href="javascript:l_image('img/icon/buttom-green.svg')">Ссылка на изображение № 1</a><br>-->
+                <!--<a href="javascript:l_image('img/icon/buttom-blue.svg')">Ссылка на изображение № 2</a><br>-->
+            <!--</td>-->
+            <!--<td style="width: 50%;">-->
+                <!--<img src="img/icon/buttom-green.svg" name="example_img"-->
+                     <!--alt="Картинки для демонстрации работы скрипта смены изображений">-->
+            <!--</td>-->
+        <!--</tr>-->
+    <!--</table>-->
+<!--</section>-->
+
+
+    <script type="text/javascript">
+        function l_image (a) {
+            document.example_img.src = a;
+        }
+    </script>
 
 
   <script src='https://codepen.io/nosurprisethere/pen/rJzKOe.js'></script>
+    <script src="js/jquery/jquery.min.js"></script>
+
   <script  src="js/script.js"></script>
 
 </main>
