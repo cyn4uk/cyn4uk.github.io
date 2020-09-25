@@ -27,7 +27,7 @@
   /*top:50%;*/
   transform:translate3d(-50%,0,0);
   overflow:hidden;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1), 0 2px 2px rgba(0,0,0,0.1);
 }
 
 
@@ -70,7 +70,7 @@
   height:50px;
   position: absolute;
   left:100px;
-  top:50%;
+  top:70%;
   transform:translateY(-50%);
   border-radius:50%;
   background-color: #fff;
