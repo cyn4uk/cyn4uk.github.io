@@ -13,8 +13,8 @@
 
 /* Our wrapper */
 .wrapper{
-  /*width: 690px;*/
-  width: 100%;
+  /*width: 900px;*/
+  width: 95%;
   height: 600px;
   max-height:100vh;
   position: absolute;
@@ -23,7 +23,7 @@
   /*transform:translate3d(-50%,-50%,0);*/
   transform:translate3d(-50%,0,0);
   overflow:hidden;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  /*box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);*/
 }
 
 
@@ -48,7 +48,8 @@
 }
 
 .bottom{
-  background: url("../img/dino/3.jpg") left top no-repeat;
+  background: #ffffff;
+  /*background: url("../img/dino/3.jpg") left top no-repeat;*/
 }
 .middle {
   background: #ffffff;
@@ -91,7 +92,7 @@
 .scrolling{
   pointer-events:none;
   opacity:1;
-  // z-index: 1;
+  z-index: 1;
 }
 
 .scroller__thumb{
