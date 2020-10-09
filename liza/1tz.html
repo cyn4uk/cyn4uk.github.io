@@ -7,27 +7,84 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>
+        // let clicks = [];
+        //  $(document).ready(function(){
+        //     $('#yes').click(function () {
+        //         clicks.push('yes');
+        //         // $("#test").toggleClass('test');
+        //         console.log(clicks)
+        //         console.log(clicks.includes('yes'))
+        //         if (clicks.includes('yes') && clicks.includes('no')) {
+        //             $("#test").toggleClass('test');
+        //         }
+        //     });
+        //     $('#no').click(function () {
+        //         // $("#test").toggleClass('test');
+        //         clicks.push('no');
+        //         console.log(clicks)
+        //         console.log(clicks.includes('yes'))
+        //         if (clicks.includes('yes')) {
+        //             $("#test").toggleClass('test');
+        //         }
+        //     });
+        //
+        //
+        //  });
+    </script>
+    <script>
+        $(document).ready(function(){
+            $('#yes').click(function () {
+                $(this).toggleClass('click');
+            });
+        });
+    </script>
+
 </head>
 <body>
 <div class="box-start">
     <div class="text-story"><p>Лисенок потерялся в торговом центре. К кому он может обратиться за помощью?</p></div>
     <div class="box-question">
-        <a href="2metro.html">
-            <div class="question" style="float: left; background: silver">
-                <p>Продавец</p>
-                <p>Охранник/человек в форме полицейского</p>
-                <p>Взрослые с детьми</p>
+            <div id="yes" class="question yes">
+                <label for="pseudoBtn" class="btn">
+                    <p>Продавец</p>
+                    <p>Охранник/человек в форме полицейского</p>
+                    <p>Взрослые с детьми</p>
+                </label>
             </div>
-        </a>
-        <a href="index.html">
-            <div class="question" style="float: right; margin-left: 100px; background: silver">
+
+            <div id="no" class="question no">
+                <label for="pseudoBtn2" class="btn">
                 <p>Любой человек</p>
+                </label>
             </div>
-        </a>
     </div>
+
+    <!--<div id="main">-->
+        <!--<div>Текст</div>-->
+        <!--<div>Текст</div>-->
+        <!--<div>Текст</div>-->
+        <!--Выделено объектов:-->
+    <!--</div>-->
 
     <!--<img class="img-start-hover" src="img/start-hover.svg">-->
     <img class="img-start" src="img/1.jpg">
+
+    <!--<label for="pseudoBtn" class="btn">"Кнопка"</label>-->
+    <input name="yes" type="checkbox" id="pseudoBtn">
+    <div class="text">
+        <p>Правильный ответ!</p>
+        <a href="2metro.html">Перейти на следующий уровень</a>
+    </div>
+
+    <input name="no" type="checkbox" id="pseudoBtn2">
+    <div class="text2">
+        <p>Неправильный ответ!</p>
+        <a href="index.html">Начать сначала</a>
+    </div>
 </div>
+
 </body>
 </html>

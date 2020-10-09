@@ -1,10 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Торговый центр</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>
+        let clicks = [];
+         $(document).ready(function(){
+            $('#var-1').click(function () {
+                if(clicks.includes('var-1')){
+                    var i = clicks.indexOf('var-1');
+                    delete clicks[i];
+                    $("#next").removeClass('d-block');
+                    console.log(clicks)
+                } else {
+                    clicks.push('var-1');
+                    console.log(clicks)
+                }
+                $(this).toggleClass('click-block');
+                if (clicks.includes('var-1') && clicks.includes('var-2') && clicks.includes('var-3')) {
+                    $("#next").addClass('d-block');
+                }
+            });
+            $('#var-2').click(function () {
+                if(clicks.includes('var-2')){
+                    var i = clicks.indexOf('var-2');
+                    delete clicks[i];
+                    $("#next").removeClass('d-block');
+                    console.log(clicks)
+                } else {
+                    clicks.push('var-2');
+                    console.log(clicks)
+                }
+                $(this).toggleClass('click-block');
+                if (clicks.includes('var-1') && clicks.includes('var-2') && clicks.includes('var-3')) {
+                    $("#next").addClass('d-block');
+                }
+            });
+            $('#var-3').click(function () {
+                if(clicks.includes('var-3')){
+                    var i = clicks.indexOf('var-3');
+                    delete clicks[i];
+                    $("#next").removeClass('d-block');
+                    console.log(clicks)
+                } else {
+                    clicks.push('var-3');
+                    console.log(clicks)
+                }
+                $(this).toggleClass('click-block');
+                if (clicks.includes('var-1') && clicks.includes('var-2') && clicks.includes('var-3')) {
+                    $("#next").addClass('d-block');
+                }
+            });
+            $('#var-4').click(function () {
+                $(this).toggleClass('click-block-no');
+                $("#no").toggleClass('d-block');
+            });
+
+
+         });
+    </script>
+
 </head>
 <body>
-следующий уровень
+<div class="box-start">
+    <div class="text-story"><p>Лисенок потерялся в торговом центре. К кому он может обратиться за помощью?</p></div>
+
+    <div id="var-1" class="var-1">
+        <p>Охранник</p>
+    </div>
+    <div id="var-2" class="var-2">
+        <p>Продавец</p>
+    </div>
+    <div id="var-3" class="var-3">
+        <p>Взрослые с детьми</p>
+    </div>
+    <div id="var-4" class="var-4">
+        <p>Любой человек</p>
+    </div>
+
+
+    <div id="next" class="next">
+        <p>Поздравляю!</p>
+        <p>Ты выбрал все правильные варианты!</p>
+        <a href="2metro-next.html">Переход к следующему уровню</a>
+    </div>
+    <div id="no" class="no">
+        <p>УПС!</p>
+        <p>Ты выбрал неправильный вариант!</p>
+        <a href="2metro-next.html">Пройти уровень заново</a>
+    </div>
+
+
+
+    <!--<img class="img-start-hover" src="img/start-hover.svg">-->
+    <img class="img-start" src="img/1.jpg">
+</div>
+
 </body>
 </html>
