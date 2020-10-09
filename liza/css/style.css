@@ -212,7 +212,7 @@ input[name="yes"]:checked ~ .text2 {
     border-radius: 10px;
     padding: 10px;
 }
-.no{
+.no-next{
     width: 300px;
     display: none;
     left: 75%;
