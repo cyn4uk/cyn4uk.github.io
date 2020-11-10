@@ -118,5 +118,6 @@ html, body{
 }
 .fon-img{
     background: url(../img/fon2.jpg) no-repeat right top/cover;
-    background-size: 100%;
+    background-size: 120%;
 }
+
