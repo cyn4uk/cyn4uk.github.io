@@ -6,7 +6,15 @@
         display: none;
     }
 }
+@media screen and (max-width: 1800px){
+    .fon-img{
+        background-size: 135%;
+    }
+}
 @media screen and (max-width: 1560px){
+    .fon-img{
+        background-size: 160%;
+    }
     .fon-middle{
         display: block;
     }
@@ -15,6 +23,9 @@
     }
 }
 @media screen and (max-width: 1300px){
+    .fon-img{
+        background-size: 180%;
+    }
     .fon-small{
         display: block;
     }

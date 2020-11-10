@@ -3,6 +3,7 @@
 html, body{
     margin: 0;
     overflow-x: hidden;
+    font-family: "Roboto", sans-serif !important;
 }
 
 .g-brd {
@@ -76,3 +77,46 @@ html, body{
     background-size: 100%;
 }
 
+.navbar-nav .nav-item .nav-link {
+    color: #fff;
+}
+
+.g-width-120{
+    width: 120px;
+}
+.g-width-30{
+    width: 30px;
+}
+.g-width-15{
+    width: 15px;
+}
+.g-width-10{
+    width: 10px;
+}
+
+.title-name-menu{
+    position: fixed;
+    margin-top: -95px;
+    left: 40%;
+}
+.bShadow-65,.bShadow-65h:hover{
+    box-shadow:0px 2px 100px -34px rgba(0, 0, 0, 0.55);
+}
+.bShadow-5, .bShadow-5h:hover {
+    box-shadow: rgba(0,0,0,.8) 0 3px 13px 1px;
+}
+.box-menu{
+    height: 200px;
+    border: 1px #fff solid;
+}
+.animate-hover{
+    display: none;
+}
+
+.box-menu:hover .animate-hover{
+    display: block;
+}
+.fon-img{
+    background: url(../img/fon2.jpg) no-repeat right top/cover;
+    background-size: 100%;
+}
