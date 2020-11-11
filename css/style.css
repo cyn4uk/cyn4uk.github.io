@@ -1,7 +1,7 @@
 @import "media.css";
 @font-face {
-    font-family: GunnyRewritten;
-    src: url(../font/gunnyrewritten/gunnyrewritten.ttf);
+    font-family: alexander;
+    src: url(../font/alexander/alexander.ttf);
 }
 
 html, body{
@@ -141,6 +141,6 @@ html, body{
 
 
 .name-site{
-    font-family: "GunnyRewritten", sans-serif !important;
+    font-family: "alexander", sans-serif !important;
     line-height: 1em;
 }
