@@ -81,6 +81,9 @@ html, body{
     color: #fff;
 }
 
+.g-width-140{
+    width: 140px;
+}
 .g-width-120{
     width: 120px;
 }
@@ -96,8 +99,8 @@ html, body{
 
 .title-name-menu{
     position: fixed;
-    margin-top: -95px;
-    left: 40%;
+    margin-top: -30%;
+    left: 45%;
 }
 .bShadow-65,.bShadow-65h:hover{
     box-shadow:0px 2px 100px -34px rgba(0, 0, 0, 0.55);
@@ -106,7 +109,7 @@ html, body{
     box-shadow: rgba(0,0,0,.8) 0 3px 13px 1px;
 }
 .box-menu{
-    height: 200px;
+    height: 250px;
     border: 1px #fff solid;
 }
 .animate-hover{
@@ -118,6 +121,9 @@ html, body{
 }
 .fon-img{
     background: url(../img/fon2.jpg) no-repeat right top/cover;
-    background-size: 120%;
+    background-size: auto 90vh;
+}
+.w-85{
+    width: 85%;
 }
 
