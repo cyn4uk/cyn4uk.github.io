@@ -144,3 +144,6 @@ html, body{
     font-family: "alexander", sans-serif !important;
     line-height: 1em;
 }
+.navbar-nav:hover .nav-item:hover .nav-link:hover {
+    color: #219bc3;
+}
