@@ -122,7 +122,7 @@ html, body{
 
 
 .fon-img{
-    background: url(../img/fon.gif) no-repeat right top/cover;
+    background: url(../img/fon.png) no-repeat right top/cover, url(../img/fon.gif) no-repeat right top/cover;
     background-size: auto 90vh;
 }
 .w-90{
