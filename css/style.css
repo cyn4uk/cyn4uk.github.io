@@ -112,14 +112,14 @@ html, body{
 .bShadow-5, .bShadow-5h:hover {
     box-shadow: rgba(0,0,0,.8) 0 3px 13px 1px;
 }
+.br-fff{
+    border: 1px #fff solid;
+    border-radius: 5px;
+}
 .box-menu{
     height: 220px;
     border: 1px #fff solid;
 }
-/*.animate-hover{*/
-    /*display: none;*/
-/*}*/
-
 
 .fon-img{
     background: url(../img/fon.png) no-repeat right top/cover, url(../img/fon.gif) no-repeat right top/cover;
@@ -130,13 +130,16 @@ html, body{
 }
 .container-fluid{
     padding-left: 10%;
+    /*padding-right: 10%;*/
 }
 .box-center{
     position: absolute;
     top: 50% !important;
     transform: translateY(-50%);
 }
-
+.g-m-30{
+    margin: 30px 0;
+}
 
 .name-site{
     font-family: "alexander", sans-serif !important;
@@ -144,6 +147,12 @@ html, body{
 }
 .navbar-nav:hover .nav-item:hover .nav-link:hover {
     color: #219bc3;
+}
+color-grau{
+    color: #eaeaea !important;
+}
+color-activ{
+    color: #219bc3 !important;
 }
 .embed-responsive .embed-responsive-item, .embed-responsive embed, .embed-responsive iframe, .embed-responsive object, .embed-responsive video {
     position: absolute;
@@ -176,4 +185,14 @@ html, body{
 }
 .box-animation:hover .animation{
     display: none;
+}
+.box-text-hover{
+    opacity: 0;
+}
+.box-grafic:hover .box-text-hover{
+    opacity: 1;
+}
+#mCSB_1, #mCSB_2{
+    background-color: white;
+    padding: 3rem;
 }

@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <!-- Title -->
-    <title>playframe-studio</title>
+    <title>video-playframe-studio</title>
 
     <!-- Required Meta Tags Always Come First -->
     <meta charset="utf-8">
@@ -28,10 +28,11 @@
     <!-- CSS Customization -->
     <link rel="stylesheet" href="css/color.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/video.css">
     <link rel="stylesheet" href="css/media.css">
   </head>
 
-  <body class="fon-img">
+  <body style="background: linear-gradient(120deg, #202020, #7B7B7B) no-repeat; height: 100vh">
     <main class="g-pt-195 g-pt-145--md">
       <header id="js-header" class="u-header u-header--sticky-top u-header--change-appearance u-header--change-logo"
               data-header-fix-moment="0" style="padding: 25px 0 0 0;">
@@ -41,7 +42,7 @@
           <nav class="navbar navbar-expand-lg g-py-0">
             <div class="container-fluid g-pos-rel">
               <!-- Logo -->
-              <a href="#!" class="js-go-to navbar-brand u-header__logo"
+              <a href="index.html" class="js-go-to navbar-brand u-header__logo"
                  data-type="static">
                 <img class="u-header__logo-img u-header__logo-img--main g-width-140" src="img/logocolortext.svg" alt="Image description">
                 <img class="u-header__logo-img g-width-140" src="img/logocolortext.svg" alt="Image description">
@@ -61,7 +62,7 @@
                     <a href="grafic.html" class="nav-link p-0">Графика</a>
                   </li>
                   <li class="nav-item g-mx-15--lg g-mb-7 g-mb-0--lg">
-                    <a href="video.html" class="nav-link p-0">Видео</a>
+                    <a href="#!" class="nav-link p-0" style="color: #219bc3">Видео</a>
                   </li>
                   <li class="nav-item g-mx-15--lg g-mb-7 g-mb-0--lg">
                     <a href="#!" class="nav-link p-0">Связаться с нами</a>
@@ -93,63 +94,90 @@
       <section class="container-fluid g-py-20 box-center">
         <section id="promoblocks g-font-size-16">
           <div class="row g-mx-minus-25">
-            <div class="col-sm-6 col-lg-3 g-px-25 g-mb-60">
-              <div class="text-center u-block-hover">
-                <div class="w-90 embed-responsive embed-responsive-16by9 bShadow-5 g-rounded-5 mb-4 box-menu box-animation g-bg-black">
-                  <video id="v1" tabindex="0" autobuffer="autobuffer" preload="preload" muted="muted" class="position-absolute fon-big style-opacity-animation">
-                    <source type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;" src="img/animate/animate.mp4"></source>
-                  </video>
-                  <p class="g-color-white title-name-menu animation g-font-size-16" style="">АНИМАЦИЯ</p>
-                </div>
+              <!--===================1===============-->
+            <div class="col-sm-6 col-lg-4 g-px-30 g-mb-60" >
+              <div class="bShadow-5 g-bg-black br-fff">
+                <img class="w-100 g-m-30" src="img/video/1.jpg">
               </div>
-            </div>
-            <div class="col-sm-6 col-lg-3 g-px-25 g-mb-60">
-              <div class="text-center u-block-hover">
-                <div class="w-90 embed-responsive embed-responsive-16by9 bShadow-5 g-rounded-5 mb-4 box-menu box-web g-bg-black">
-                  <video id="v2" tabindex="0" autobuffer="autobuffer" preload="preload" muted="muted" class="position-absolute fon-big style-opacity-web">
-                    <source type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;" src="img/animate/mobile.mp4"></source>
-                  </video>
-                  <p class="g-color-white title-name-menu web g-font-size-16">ВЕБ</p>
-                </div>
+              <div style="margin-top: -40%; margin-left: 40%; width: 50px; position: absolute">
+                <embed class="w-100 g-m-30" src="img/icon/play-new2.svg">
               </div>
-            </div>
-            <div class="col-sm-6 col-lg-6 g-px-25 g-mb-60" style="opacity: 0">
-              <div class="text-center u-block-hover">
-                <div class="w-90 embed-responsive embed-responsive-16by9 bShadow-5 g-rounded-5 mb-4 box-menu">
-                  <p class="g-color-white"></p>
+                <div class="g-color-gray-light-v3 g-font-size-12 text-center" style="margin-top: -25px">
+                    <span class="p-2">Социальное кино</span>
+                    <span class="p-2">Клип</span>
+                    <span class="p-2">Тревел-ролик</span>
+                    <span class="p-2">Трейлер</span>
+                    <span class="p-2">4К</span>
                 </div>
+            </div>
+              <div class="col-sm-6 col-lg-4 g-px-30 g-mb-60" >
+                  <div class="bShadow-5 g-bg-black br-fff">
+                      <img class="w-100 g-m-30" src="img/video/2.jpg">
+                  </div>
+                  <div style="margin-top: -40%; margin-left: 40%; width: 50px; position: absolute">
+                      <embed class="w-100 g-m-30" src="img/icon/play-new2.svg">
+                  </div>
+                  <div class="g-color-gray-light-v3 g-font-size-12 text-center" style="margin-top: -25px">
+                      <span class="p-2">Тревел-ролик из материалов заказчика</span>
+                  </div>
               </div>
-            </div>
-            <div class="col-sm-6 col-lg-3 g-px-25 g-mb-60">
-              <div class="text-center u-block-hover">
-                <div class="w-90 embed-responsive embed-responsive-16by9 bShadow-5 g-rounded-5 mb-4 box-menu box-grafic g-bg-black">
-                  <video id="v3" tabindex="0" autobuffer="autobuffer" preload="preload" muted="muted" class="position-absolute fon-big style-opacity-grafic">
-                    <source type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;" src="img/animate/camera.mp4"></source>
-                  </video>
-                  <p class="g-color-white title-name-menu grafic g-font-size-16">ГРАФИКА</p>
-                </div>
+              <div class="col-sm-6 col-lg-4 g-px-30 g-mb-60" >
+                  <div class="bShadow-5 g-bg-black br-fff">
+                      <img class="w-100 g-m-30" src="img/video/3.jpg">
+                  </div>
+                  <div style="margin-top: -40%; margin-left: 40%; width: 50px; position: absolute">
+                      <embed class="w-100 g-m-30" src="img/icon/play-new2.svg">
+                  </div>
+                  <div class="g-color-gray-light-v3 g-font-size-12 text-center" style="margin-top: -25px">
+                      <span class="p-2">Клип</span>
+                  </div>
               </div>
-            </div>
-            <div class="col-sm-6 col-lg-3 g-px-25 g-mb-60">
-              <div class="text-center u-block-hover">
-                <div class="w-90 embed-responsive embed-responsive-16by9 bShadow-5 g-rounded-5 mb-4 box-menu box-video g-bg-black">
-                  <video id="v4" tabindex="0" autobuffer="autobuffer" preload="preload" muted="muted" class="position-absolute fon-big style-opacity-video">
-                  <source type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;" src="img/animate/camera.mp4"></source>
-                  </video>
-                  <p class="g-color-white title-name-menu video g-font-size-16">ВИДЕО</p>
-                </div>
+              <div class="col-sm-6 col-lg-4 g-px-30 g-mb-60" >
+                  <div class="bShadow-5 g-bg-black br-fff">
+                      <img class="w-100 g-m-30" src="img/video/1.jpg">
+                  </div>
+                  <div style="margin-top: -40%; margin-left: 40%; width: 50px; position: absolute">
+                      <embed class="w-100 g-m-30" src="img/icon/play-new2.svg">
+                  </div>
+                  <div class="g-color-gray-light-v3 g-font-size-12 text-center" style="margin-top: -25px">
+                      <span class="p-2">Социальное кино</span>
+                      <span class="p-2">Клип</span>
+                      <span class="p-2">Тревел-ролик</span>
+                      <span class="p-2">Трейлер</span>
+                      <span class="p-2">4К</span>
+                  </div>
               </div>
-            </div>
-            <div class="col-sm-6 col-lg-3 g-px-25 g-mb-60 g-font-size-50">
-              <!--<div class="w-85 embed-responsive embed-responsive-16by9 bShadow-5 g-rounded-5 mb-4 box-menu">-->
-              <p class="g-color-white name-site" style="margin-left: 20%">Студия<br>живого<br>кадра</p>
-              <!--</div>-->
-            </div>
-            <div class="col-sm-6 col-lg-3 g-px-25 g-mb-60 g-font-size-30">
-              <!--<div class="w-85 embed-responsive embed-responsive-16by9 bShadow-5 g-rounded-5 mb-4 box-menu">-->
-              <p class="g-color-white"></p>
-              <!--</div>-->
-            </div>
+              <div class="col-sm-6 col-lg-4 g-px-30 g-mb-60" >
+                  <div class="bShadow-5 g-bg-black br-fff">
+                      <img class="w-100 g-m-30" src="img/video/1.jpg">
+                  </div>
+                  <div style="margin-top: -40%; margin-left: 40%; width: 50px; position: absolute">
+                      <embed class="w-100 g-m-30" src="img/icon/play-new2.svg">
+                  </div>
+                  <div class="g-color-gray-light-v3 g-font-size-12 text-center" style="margin-top: -25px">
+                      <span class="p-2">Социальное кино</span>
+                      <span class="p-2">Клип</span>
+                      <span class="p-2">Тревел-ролик</span>
+                      <span class="p-2">Трейлер</span>
+                      <span class="p-2">4К</span>
+                  </div>
+              </div>
+              <div class="col-sm-6 col-lg-4 g-px-30 g-mb-60" >
+                  <div class="bShadow-5 g-bg-black br-fff">
+                      <img class="w-100 g-m-30" src="img/video/1.jpg">
+                  </div>
+                  <div style="margin-top: -40%; margin-left: 40%; width: 50px; position: absolute">
+                      <embed class="w-100 g-m-30" src="img/icon/play-new2.svg">
+                  </div>
+                  <div class="g-color-gray-light-v3 g-font-size-12 text-center" style="margin-top: -25px">
+                      <span class="p-2">Социальное кино</span>
+                      <span class="p-2">Клип</span>
+                      <span class="p-2">Тревел-ролик</span>
+                      <span class="p-2">Трейлер</span>
+                      <span class="p-2">4К</span>
+                  </div>
+              </div>
+
           </div>
         </section>
         <!-- End Promo Blocks -->
