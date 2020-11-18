@@ -192,7 +192,7 @@ color-activ{
 .box-grafic:hover .box-text-hover{
     opacity: 1;
 }
-#mCSB_1, #mCSB_2{
+#mCSB_1, #mCSB_2, #mCSB_3, #mCSB_4, #mCSB_5, #mCSB_6, #mCSB_7, #mCSB_8, #mCSB_9{
     background-color: white;
     padding: 3rem;
 }
