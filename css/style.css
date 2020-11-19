@@ -146,13 +146,13 @@ html, body{
     line-height: 1em;
 }
 .navbar-nav:hover .nav-item:hover .nav-link:hover {
-    color: #219bc3;
+    color: #efb82e;
 }
 color-grau{
     color: #eaeaea !important;
 }
 color-activ{
-    color: #219bc3 !important;
+    color: #efb82e !important;
 }
 .embed-responsive .embed-responsive-item, .embed-responsive embed, .embed-responsive iframe, .embed-responsive object, .embed-responsive video {
     position: absolute;
@@ -191,6 +191,9 @@ color-activ{
 }
 .box-grafic:hover .box-text-hover{
     opacity: 1;
+}
+.box-grafic:hover .img-hover{
+    opacity: 0.5;
 }
 #mCSB_1, #mCSB_2, #mCSB_3, #mCSB_4, #mCSB_5, #mCSB_6, #mCSB_7, #mCSB_8, #mCSB_9{
     background-color: white;
