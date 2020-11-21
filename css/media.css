@@ -1,3 +1,22 @@
+@media screen and (max-height: 1024px){
+    .mb-media{
+        margin-bottom: 100px;
+    }
+}
+@media screen and (max-height: 768px){
+    /*.index-style-media{*/
+        /*margin-top: 50px;*/
+    /*}*/
+    .box-menu {
+        height: 180px;
+    }
+    .w-90{
+        width: 100%;
+    }
+    .g-mb-media {
+        margin-bottom: 1.28571rem !important;
+    }
+}
 @media screen and (max-width: 4000px){
     .fon-big{
         display: block;

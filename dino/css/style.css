@@ -193,17 +193,11 @@
   color: black;
 }
 
-
-/*.slick-slide {*/
-  /*transition: all ease-in-out .3s;*/
-  /*opacity: .2;*/
-/*}*/
-
-/*.slick-active {*/
-  /*opacity: .5;*/
-/*}*/
-
 .slick-current {
   opacity: 1;
+}
+
+.ml-7{
+  margin-left: 5rem;
 }
 
