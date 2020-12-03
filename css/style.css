@@ -159,7 +159,7 @@ color-activ{
     left: 20%;
     width: 60%;
 }
-.style-opacity-video, .style-opacity-grafic, .style-opacity-web, .style-opacity-animation{
+.style-opacity-video, .style-opacity-grafic, .style-opacity-web, .style-opacity-animation {
     opacity: .2;
 }
 .box-video:hover .style-opacity-video{
