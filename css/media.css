@@ -21,9 +21,9 @@
     .fon-big{
         display: block;
     }
-    .fon-middle, .fon-small, .fon-mobile{
+/*     .fon-middle, .fon-small, .fon-mobile{
         display: none;
-    }
+    } */
 }
 @media screen and (max-width: 1800px){
     /*.fon-img{*/
@@ -37,9 +37,9 @@
     .fon-middle{
         display: block;
     }
-    .fon-big, .fon-small, .fon-mobile{
+/*     .fon-big, .fon-small, .fon-mobile{
         display: none;
-    }
+    } */
 }
 @media screen and (max-width: 1300px){
     /*.fon-img{*/
@@ -48,9 +48,9 @@
     .fon-small{
         display: block;
     }
-    .fon-big, .fon-middle, .fon-mobile{
+/*    .fon-big, .fon-middle, .fon-mobile{
         display: none;
-    }
+    } */
 }
 @media screen and (max-width: 990px){
     .logo_mobile{
@@ -69,7 +69,20 @@
     .fon-mobile{
         display: block;
     }
-    .fon-big, .fon-middle, .fon-small{
+    .hamburger-inner{
+        background: white;
+    }
+/*    .fon-big, .fon-middle, .fon-small{
         display: none;
+    } */
+}
+@media screen and (max-width: 576px){
+    .footer-style{
+        position: relative;
+        width: 100%;
+        bottom: 0
+    }
+    .u-header--sticky-top, .u-header--sticky-bottom {
+        position: absolute;
     }
 }

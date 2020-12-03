@@ -189,11 +189,18 @@ color-activ{
 .box-text-hover{
     opacity: 0;
 }
+
 .box-grafic:hover .box-text-hover{
     opacity: 1;
 }
 .box-grafic:hover .img-hover{
     opacity: 0.5;
+}
+.opacity-hover{
+    opacity: 0.5;
+}
+.opacity-hover:hover{
+    opacity: 1;
 }
 #mCSB_1, #mCSB_2, #mCSB_3, #mCSB_4, #mCSB_5, #mCSB_6, #mCSB_7, #mCSB_8, #mCSB_9{
     background-color: white;
@@ -201,4 +208,9 @@ color-activ{
 }
 .g-mb-media {
     margin-bottom: 4.28571rem !important;
+}
+.footer-style{
+    position: fixed;
+    width: 100%;
+    bottom: 0
 }

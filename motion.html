@@ -32,9 +32,10 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/video.css">
     <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/media-motion.css">
   </head>
 
-  <body style="background: linear-gradient(120deg, #202020, #7B7B7B) no-repeat; height: 100vh">
+  <body style="background: url(img/marionetka.svg) no-repeat center top/cover, linear-gradient(120deg, #202020, #7B7B7B) no-repeat; background-size: auto 110vh; height: 100vh">
     <main class="g-pt-195 g-pt-145--md">
       <header id="js-header" class="u-header u-header--sticky-top u-header--change-appearance u-header--change-logo"
               data-header-fix-moment="0" style="padding: 25px 0 0 0;">
@@ -55,6 +56,9 @@
               <div class="collapse navbar-collapse align-items-center flex-sm-row hamburger-mobile-media" id="navBar">
                 <ul id="js-scroll-nav" class="navbar-nav text-uppercase g-letter-spacing-1 g-font-size-14 g-pt-20 g-pt-0--lg">
                   <li class="nav-item g-mx-15--lg g-mb-7 g-mb-0--lg">
+                    <a href="index.html" class="nav-link p-0">Главная</a>
+                  </li>
+                  <li class="nav-item g-mx-15--lg g-mb-7 g-mb-0--lg">
                     <a href="#!" class="nav-link p-0" style="color: #efb82e">Моушен</a>
                   </li>
                   <li class="nav-item g-mx-15--lg g-mb-7 g-mb-0--lg">
@@ -66,9 +70,9 @@
                   <li class="nav-item g-mx-15--lg g-mb-7 g-mb-0--lg">
                     <a href="video.html" class="nav-link p-0">Видео</a>
                   </li>
-                  <li class="nav-item g-mx-15--lg g-mb-7 g-mb-0--lg">
-                    <a href="tipograf.html" class="nav-link p-0">Типографическая продукция</a>
-                  </li>
+<!--                  <li class="nav-item g-mx-15&#45;&#45;lg g-mb-7 g-mb-0&#45;&#45;lg">-->
+<!--                    <a href="tipograf.html" class="nav-link p-0">Типографическая продукция</a>-->
+<!--                  </li>-->
                 </ul>
               </div>
               <!-- End Navigation -->
@@ -101,9 +105,9 @@
               <a href="#!" class="js-modal" data-modal-target="#popupAccordion2" data-modal-effect="fadein">
               <div class="bShadow-5 g-bg-black br-fff box-grafic">
                 <img class="w-100 g-m-30 img-hover" src="img/motion/1.jpg">
-              </div>
-              <div style="margin-top: -40%; margin-left: 40%; width: 50px; position: absolute">
-                <embed class="w-100 g-m-30" src="img/icon/play-new2.svg">
+                <div style="margin-top: -40%; margin-left: 40%; width: 50px; position: absolute; z-index: 99999">
+                  <img class="w-100 g-m-30 opacity-hover" src="img/icon/play-new2.svg">
+                </div>
               </div>
                 <div class="g-color-gray-light-v3 g-font-size-12 text-center" style="margin-top: -25px">
                     <span class="p-2">Город</span>
@@ -123,9 +127,9 @@
                   <a href="#!" class="js-modal" data-modal-target="#popupAccordion3" data-modal-effect="fadein">
                       <div class="bShadow-5 g-bg-black br-fff box-grafic">
                           <img class="w-100 g-m-30 img-hover" src="img/motion/2.jpg">
-                      </div>
-                      <div style="margin-top: -40%; margin-left: 40%; width: 50px; position: absolute">
-                          <embed class="w-100 g-m-30" src="img/icon/play-new2.svg">
+                        <div style="margin-top: -40%; margin-left: 40%; width: 50px; position: absolute; z-index: 99999">
+                          <img class="w-100 g-m-30 opacity-hover" src="img/icon/play-new2.svg">
+                        </div>
                       </div>
                       <div class="g-color-gray-light-v3 g-font-size-12 text-center" style="margin-top: -25px">
                           <span class="p-2">Деревня</span>
@@ -148,7 +152,7 @@
       </section>
 
       <!-- Footer -->
-      <footer class="g-bg-black" style="position: fixed; width: 100%; bottom: 0">
+      <footer class="g-bg-black footer-style">
         <div class="container-fluid" style="padding-right: 10%">
           <div class="g-color-gray-dark-v5 g-py-30 g-brd">
             <ul class="list-inline d-inline-block mb-0">

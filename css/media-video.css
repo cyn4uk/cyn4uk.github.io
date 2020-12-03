@@ -1,0 +1,27 @@
+@media screen and (max-width: 998px){
+    .display-none{
+        display: none;
+    }
+    .btn{
+        margin-right: 5%;
+    }
+}
+@media screen and (max-width: 576px){
+    .box-center {
+        margin-top: -10%;
+        position: relative;
+        top: 0% !important;
+        transform: translateY(0%);
+    }
+    .g-mb-media {
+        margin-bottom: 2.28571rem !important;
+    }
+    .footer-style{
+        position: relative;
+        width: 100%;
+        bottom: 0
+    }
+    .u-header--sticky-top, .u-header--sticky-bottom {
+        position: absolute;
+    }
+}
