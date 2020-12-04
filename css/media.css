@@ -73,4 +73,17 @@
     .g-width-140 {
         width: 100px !important;
     }
+    .g-pa-20 {
+        padding: 0 !important;
+    }
+    .modal-demo{
+        margin-top: 150px;
+        width: 100%;
+    }
+    .g-mt-30 {
+        margin-top: 0 !important;
+    }
+    .custombox-overlay{
+        background: url(../img/icon/exit.svg) no-repeat 92% 2% /8%, rgba(0,0,0,1) !important;
+    }
 }

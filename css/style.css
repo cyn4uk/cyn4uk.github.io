@@ -226,3 +226,11 @@ color-activ{
 .p-25-0{
     padding: 25px 0 0 0;
 }
+.modal-demo{
+    display: none;
+    width: 90%;
+    height: inherit;
+}
+.custombox-overlay{
+    background: url(../img/icon/exit.svg) no-repeat 98% 2% /2%, rgba(0,0,0,1) !important;
+}
