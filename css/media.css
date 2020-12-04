@@ -86,4 +86,7 @@
     .custombox-overlay{
         background: url(../img/icon/exit.svg) no-repeat 92% 2% /8%, rgba(0,0,0,1) !important;
     }
+    .display-block-media{
+        display: block;
+    }
 }
