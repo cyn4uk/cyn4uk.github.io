@@ -62,10 +62,10 @@
               <!-- End Logo -->
 
               <!-- Navigation -->
-              <div class="collapse navbar-collapse align-items-center flex-sm-row hamburger-mobile-media" id="navBar">
+              <div class="collapse navbar-collapse align-items-center flex-sm-row hamburger-mobile-media text-center" id="navBar">
                 <ul id="js-scroll-nav" class="navbar-nav text-uppercase g-letter-spacing-1 g-font-size-14 g-pt-20 g-pt-0--lg">
                   <li class="nav-item g-mx-15--lg g-mb-7 g-mb-0--lg">
-                    <a href="motion.html" class="nav-link p-0">Моушен</a>
+                    <a href="motion.html" class="nav-link p-0">Анимация</a>
                   </li>
                   <li class="nav-item g-mx-15--lg g-mb-7 g-mb-0--lg">
                     <a href="web.html" class="nav-link p-0">Веб</a>
@@ -148,7 +148,7 @@
                   <video id="v1" tabindex="0" autobuffer="autobuffer" preload="preload" muted="muted" class="position-absolute fon-big style-opacity-animation" style="padding: 1.5rem">
                     <source type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;" src="img/animate/animate2.mp4"></source>
                   </video>
-                  <p class="g-color-white title-name-menu animation g-font-size-16" style="">МОУШЕН</p>
+                  <p class="g-color-white title-name-menu animation g-font-size-16" style="">АНИМАЦИЯ</p>
                 </div>
               </div>
               </a>
@@ -157,9 +157,10 @@
               <a href="web.html">
               <div class="text-center u-block-hover">
                 <div class="w-90 embed-responsive embed-responsive-16by9 bShadow-5 g-rounded-5 mb-4 box-menu box-web g-bg-black">
-                  <video id="v2" tabindex="0" autobuffer="autobuffer" preload="preload" muted="muted" class="position-absolute fon-big style-opacity-web">
+                  <video id="v2" tabindex="0" autobuffer="autobuffer" preload="preload" muted="muted" class="position-absolute fon-big style-opacity-web display-none">
                     <source type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;" src="img/animate/mobile.mp4"></source>
                   </video>
+                  <img class="w-60 display-block-media" style="margin-top: -200px; position: absolute; margin-left: 20%;" src="img/animate/web-img.svg">
                   <p class="g-color-white title-name-menu web g-font-size-16">ВЕБ</p>
                 </div>
               </div>
@@ -176,9 +177,10 @@
               <a href="grafic.html">
               <div class="text-center u-block-hover">
                 <div class="w-90 embed-responsive embed-responsive-16by9 bShadow-5 g-rounded-5 mb-4 box-menu box-grafic g-bg-black">
-                  <video id="v3" tabindex="0" autobuffer="autobuffer" preload="preload" muted="muted" class="position-absolute fon-big style-opacity-grafic" style="height: 90%">
+                  <video id="v3" tabindex="0" autobuffer="autobuffer" preload="preload" muted="muted" class="position-absolute fon-big style-opacity-grafic display-none" style="height: 90%">
                     <source type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;" src="img/animate/image.mp4"></source>
                   </video>
+                  <img class="w-60 display-block-media" style="margin-top: -200px; position: absolute; margin-left: 20%;" src="img/animate/grafic-img.svg">
                   <p class="g-color-white title-name-menu grafic g-font-size-16">ГРАФИКА</p>
                 </div>
               </div>
@@ -323,236 +325,6 @@
     <script src="js/hs.popup.js"></script>
     <script src="js/hs.scrollbar.js"></script>
     <script src="js/hs.modal-window.js"></script>
-
-<!--    <script>-->
-<!--        // initialization of google map-->
-<!--        function initMap() {-->
-<!--            $.HSCore.components.HSGMap.init('.js-g-map');-->
-<!--        }-->
-
-<!--        // initialization of revolution slider-->
-<!--        var tpj = jQuery,-->
-<!--            promoSlider;-->
-
-<!--        tpj(document).on('ready', function () {-->
-<!--            if (tpj('#promoSlider').revolution == undefined) {-->
-<!--                revslider_showDoubleJqueryError('#promoSlider');-->
-<!--            } else {-->
-<!--                promoSlider = tpj('#promoSlider').show().revolution({-->
-<!--                    sliderType: 'standard',-->
-<!--                    jsFileLocation: '../../revolution/js/',-->
-<!--                    sliderLayout: 'fullscreen',-->
-<!--                    dottedOverlay: 'none',-->
-<!--                    delay: 9000,-->
-<!--                    navigation: {-->
-<!--                        keyboardNavigation: 'off',-->
-<!--                        keyboard_direction: 'horizontal',-->
-<!--                        mouseScrollNavigation: 'off',-->
-<!--                        onHoverStop: 'off',-->
-<!--                        touch: {-->
-<!--                            touchenabled: 'on',-->
-<!--                            swipe_threshold: 75,-->
-<!--                            swipe_min_touches: 1,-->
-<!--                            swipe_direction: 'horizontal',-->
-<!--                            drag_block_vertical: false-->
-<!--                        },-->
-<!--                        bullets: {-->
-<!--                            enable: true,-->
-<!--                            hide_onmobile: true,-->
-<!--                            hide_under: 960,-->
-<!--                            style: 'zeus',-->
-<!--                            hide_onleave: false,-->
-<!--                            direction: 'horizontal',-->
-<!--                            h_align: 'right',-->
-<!--                            v_align: 'bottom',-->
-<!--                            h_offset: 80,-->
-<!--                            v_offset: 50,-->
-<!--                            space: 5,-->
-<!--                            tmp: '<span class="tp-bullet-image"></span>' +-->
-<!--                            '<span class="tp-bullet-imageoverlay"></span>' +-->
-<!--                            '<span class="tp-bullet-title">{{title}}</span>'-->
-<!--                        }-->
-<!--                    },-->
-<!--                    responsiveLevels: [1240, 1024, 778, 480],-->
-<!--                    gridwidth: [1240, 1024, 778, 480],-->
-<!--                    gridheight: [868, 768, 960, 720],-->
-<!--                    lazyType: 'none',-->
-<!--                    parallax: {-->
-<!--                        type: 'mouse',-->
-<!--                        origo: 'slidercenter',-->
-<!--                        speed: 2000,-->
-<!--                        levels: [2, 3, 4, 5, 6, 7, 12, 16, 10, 50],-->
-<!--                        disable_onmobile: 'on'-->
-<!--                    },-->
-<!--                    shadow: 0,-->
-<!--                    spinner: 'off',-->
-<!--                    stopLoop: 'on',-->
-<!--                    stopAfterLoops: 0,-->
-<!--                    stopAtSlide: 1,-->
-<!--                    shuffle: 'off',-->
-<!--                    autoHeight: 'off',-->
-<!--                    fullScreenAlignForce: 'off',-->
-<!--                    fullScreenOffset: '60px',-->
-<!--                    disableProgressBar: 'on',-->
-<!--                    hideThumbsOnMobile: 'off',-->
-<!--                    hideSliderAtLimit: 0,-->
-<!--                    hideCaptionAtLimit: 0,-->
-<!--                    hideAllCaptionAtLilmit: 0,-->
-<!--                    debugMode: false,-->
-<!--                    fallbacks: {-->
-<!--                        simplifyAll: 'off',-->
-<!--                        nextSlideOnWindowFocus: 'off',-->
-<!--                        disableFocusListener: false-->
-<!--                    }-->
-<!--                });-->
-
-<!--                var newCall = new Object(),-->
-<!--                    cslide;-->
-
-<!--                newCall.callback = function () {-->
-<!--                    var proc = promoSlider.revgetparallaxproc(),-->
-<!--                        fade = 1 + proc,-->
-<!--                        scale = 1 + (Math.abs(proc) / 10);-->
-
-<!--                    punchgs.TweenLite.set(promoSlider.find('.slotholder, .rs-background-video-layer'), {-->
-<!--                        opacity: fade,-->
-<!--                        scale: scale-->
-<!--                    });-->
-<!--                };-->
-
-<!--                newCall.inmodule = 'parallax';-->
-<!--                newCall.atposition = 'start';-->
-
-<!--                promoSlider.bind('revolution.slide.onloaded', function (e) {-->
-<!--                    promoSlider.revaddcallback(newCall);-->
-<!--                });-->
-<!--            }-->
-<!--        });-->
-
-<!--        $(document).on('ready', function () {-->
-<!--            // initialization of carousel-->
-<!--            $.HSCore.components.HSCarousel.init('.js-carousel');-->
-
-<!--            // initialization of header-->
-<!--            $.HSCore.components.HSHeader.init($('#js-header'));-->
-<!--            $.HSCore.helpers.HSHamburgers.init('.hamburger');-->
-
-<!--            // initialization of scroll animation-->
-<!--            $.HSCore.components.HSOnScrollAnimation.init('[data-animation]');-->
-
-<!--            // initialization of tabs-->
-<!--            $.HSCore.components.HSTabs.init('[role="tablist"]');-->
-
-<!--            // initialization of progressbar-->
-<!--            var horizontalProgressBars = $.HSCore.components.HSProgressBar.init('.js-hr-progress-bar', {-->
-<!--                direction: 'horizontal',-->
-<!--                indicatorSelector: '.js-hr-progress-bar-indicator'-->
-<!--            });-->
-
-<!--            // initialization of chart pies-->
-<!--            var items = $.HSCore.components.HSChartPie.init('.js-pie');-->
-
-<!--            // initialization of go to section-->
-<!--            $.HSCore.components.HSGoTo.init('.js-go-to');-->
-<!--        });-->
-
-<!--        $(window).on('load', function() {-->
-<!--            // initialization of HSScrollNav-->
-<!--            $.HSCore.components.HSScrollNav.init($('#js-scroll-nav'), {-->
-<!--                duration: 700-->
-<!--            });-->
-
-<!--            setTimeout(function() {-->
-<!--                // initialization of select-->
-<!--                $.HSCore.components.HSSelect.init('.js-custom-select');-->
-<!--            }, 1);-->
-<!--        });-->
-
-<!--        $(window).on('resize', function () {-->
-<!--            setTimeout(function () {-->
-<!--                $.HSCore.components.HSTabs.init('[role="tablist"]');-->
-<!--            }, 200);-->
-<!--        });-->
-<!--    </script>-->
-
-<!--    <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyAtt1z99GtrHZt_IcnK-wryNsQ30A112J0&callback=initMap" async></script>-->
-
-<!--    <script>-->
-<!--      // initialization of google map-->
-<!--      function initMap() {-->
-<!--        $.HSCore.components.HSGMap.init('.js-g-map');-->
-<!--      }-->
-
-<!--      $(document).on('ready', function () {-->
-<!--        // initialization of carousel-->
-<!--        $.HSCore.components.HSCarousel.init('.js-carousel');-->
-
-<!--        // initialization of header-->
-<!--        $.HSCore.components.HSHeader.init($('#js-header'));-->
-<!--        $.HSCore.helpers.HSHamburgers.init('.hamburger');-->
-
-<!--        // initialization of go to section-->
-<!--        $.HSCore.components.HSGoTo.init('.js-go-to');-->
-<!--      });-->
-
-<!--      $(window).on('load', function() {-->
-<!--        // initialization of HSScrollNav-->
-<!--        $.HSCore.components.HSScrollNav.init($('#js-scroll-nav'), {-->
-<!--          duration: 700-->
-<!--        });-->
-
-<!--        // initialization of cubeportfolio-->
-<!--        $.HSCore.components.HSCubeportfolio.init('.cbp');-->
-<!--      });-->
-<!--    </script>-->
-
-<!--    <script>-->
-<!--        $(document).on('ready', function () {-->
-<!--            // initialization of carousel-->
-<!--            $.HSCore.components.HSCarousel.init('.js-carousel');-->
-
-<!--            // initialization of header-->
-<!--            $.HSCore.components.HSHeader.init($('#js-header'));-->
-<!--            $.HSCore.helpers.HSHamburgers.init('.hamburger');-->
-
-<!--            // initialization of tabs-->
-<!--            $.HSCore.components.HSTabs.init('[role="tablist"]');-->
-
-<!--            // initialization of scroll animation-->
-<!--            $.HSCore.components.HSOnScrollAnimation.init('[data-animation]');-->
-
-<!--            // initialization of go to section-->
-<!--            $.HSCore.components.HSGoTo.init('.js-go-to');-->
-
-<!--            // initialization of popups-->
-<!--            $.HSCore.components.HSPopup.init('.js-fancybox-media', {-->
-<!--                helpers: {-->
-<!--                    media: {},-->
-<!--                    overlay: {-->
-<!--                        css: {-->
-<!--                            'background': 'rgba(255, 255, 255, .8)'-->
-<!--                        }-->
-<!--                    }-->
-<!--                }-->
-<!--            });-->
-<!--        });-->
-
-<!--        $(window).on('load', function() {-->
-<!--            // initialization of HSScrollNav-->
-<!--            $.HSCore.components.HSScrollNav.init($('#js-scroll-nav'), {-->
-<!--                duration: 700-->
-<!--            });-->
-
-<!--            // initialization of cubeportfolio-->
-<!--            $.HSCore.components.HSCubeportfolio.init('.cbp');-->
-<!--        });-->
-
-<!--        $(window).on('resize', function () {-->
-<!--            setTimeout(function () {-->
-<!--                $.HSCore.components.HSTabs.init('[role="tablist"]');-->
-<!--            }, 200);-->
-<!--        });-->
-<!--    </script>-->
 
     <!--оживание видео-->
     <script  src="js/video.js"></script>
