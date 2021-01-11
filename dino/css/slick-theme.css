@@ -113,10 +113,14 @@
     content: '←';
 }
 
-/* Dots */
+/* Dots
 .slick-dotted.slick-slider
 {
     margin-bottom: 30px;
+}*/
+.slick-dotted.slick-slider
+{
+    margin-bottom: 0px;
 }
 
 .slick-dots
