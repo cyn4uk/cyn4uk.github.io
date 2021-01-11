@@ -2,11 +2,14 @@
 <html lang="ru" >
 <head>
   <meta charset="UTF-8">
-  <title>ПРОвсе</title>
+  <title>ПРОдино</title>
+  <link rel="SHORTCUT ICON" href="img/favicon.ico" type="image/x-icon">
+
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'>
 <link rel='stylesheet' href='https://codepen.io/nosurprisethere/pen/rJzKOe.css'>
   <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
 
+  <link rel="stylesheet" href="css/slader.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/media.css">
 </head>
@@ -17,20 +20,44 @@
       <div class="float-left">
         <a href="#!">
           <img class="img-logo" src="img/logo1.svg" alt="Image description">
-          <span class="font-weight-bold">ПРО</span><span>все</span>
+          <span class="font-weight-bold">ПРО</span><span>дино</span>
         </a>
       </div>
     </div>
   </header>
 
   <div class="dino-menu">
-    <a href="diplo.html"><img class="float-right m-3" style="height: 60px" src="img/icon/menu_diplo.svg"></a>
-    <a href="trizerapt.html"><img class="float-right m-3" style="height: 60px" src="img/icon/menu_triz.svg"></a>
-    <a href="#!"><img class="float-right m-3" style="height: 60px" src="img/icon/menu_teran.svg"></a>
+    <div class="slider">
+      <div class="slider__wrapper">
+        <div class="slider__item">
+          <div style="height: 200px;"><a href="#!"><img class="float-right m-2em" src="img/icon/menu_teran_activ.svg"></a></div>
+        </div>
+        <div class="slider__item">
+          <div style="height: 200px;"><a href="trizerapt.html"><img class="float-right m-2em" src="img/icon/menu_triz.svg"></a></div>
+        </div>
+        <div class="slider__item">
+          <div style="height: 200px;"><a href="diplo.html"><img class="float-right m-2em" src="img/icon/menu_diplo.svg"></a></div>
+        </div>
+        <div class="slider__item">
+          <div style="height: 200px;"><a href="diplo.html"><img class="float-right m-2em" src="img/icon/menu_diplo.svg"></a></div>
+        </div>
+        <div class="slider__item">
+          <div style="height: 200px;"><a href="diplo.html"><img class="float-right m-2em" src="img/icon/menu_diplo.svg"></a></div>
+        </div>
+        <div class="slider__item">
+          <div style="height: 200px;"><a href="diplo.html"><img class="float-right m-2em" src="img/icon/menu_diplo.svg"></a></div>
+        </div>
+        <div class="slider__item">
+          <div style="height: 200px;"><a href="diplo.html"><img class="float-right m-2em" src="img/icon/menu_diplo.svg"></a></div>
+        </div>
+      </div>
+      <a class="slider__control slider__control_left" href="#" role="button"></a>
+      <a class="slider__control slider__control_right slider__control_show" href="#" role="button"></a>
+    </div>
   </div>
 
   <section id="page">
-    <div class="wrapper mt-100">
+    <div class="wrapper">
       <div class="bottom"><img src="img/dino/01-tiran/3.jpg" draggable="false"/></div>
       <div class="middle"><img src="img/dino/01-tiran/1.jpg" draggable="false" name="example_img"/></div>
       <div class="scroller scroller-middle">
@@ -38,20 +65,19 @@
           <polygon points="0 50 37 68 37 32 0 50" style="fill:#FFCCBC"/><polygon points="100 50 64 32 64 68 100 50" style="fill:#FFCCBC"/>
         </svg>
       </div>
-      <div class="top"><img src="img/dino/01-tiran/2.jpg" draggable="false"/></div>
-      <div class="scroller scroller-top">
+      <div class="top" style="display: none;"><img src="img/dino/01-tiran/2.jpg" draggable="false"/></div>
+      <div class="scroller scroller-top" style="display: none;">
         <svg class="scroller__thumb" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
           <polygon points="0 50 37 68 37 32 0 50" style="fill:#FFAB91"/><polygon points="100 50 64 32 64 68 100 50" style="fill:#FFAB91"/>
         </svg>
       </div>
     </div>
-    <div class="menu-img w-100">
-      <ul class="float-left mr-5 w-100 bg-white">
-        <li class="list-stt d-inline-block"><a href="javascript:l_image('img/dino/01-tiran/1.jpg')"><img class="menu-img-color" src="img/icon/dino-color/tir-standart.svg"></a></li>
-        <li class="list-stt d-inline-block"><a href="javascript:l_image('img/dino/01-tiran/1-green.jpg')"><img class="menu-img-color" src="img/icon/dino-color/tir-green.svg"></a></li>
-        <li class="list-stt d-inline-block"><a href="javascript:l_image('img/dino/01-tiran/1-blue.jpg')"><img class="menu-img-color" src="img/icon/dino-color/tir-blue.svg"></a></li>
-      </ul>
+    <div class="menu-img mr-5 bg-white">
+        <div class="list-stt"><a href="javascript:l_image('img/dino/01-tiran/1.jpg')"><img class="menu-img-color" src="img/icon/dino-color/tir-standart.svg"></a></div>
+        <div class="list-stt"><a href="javascript:l_image('img/dino/01-tiran/1-green.jpg')"><img class="menu-img-color" src="img/icon/dino-color/tir-green.svg"></a></div>
+        <div class="list-stt"><a href="javascript:l_image('img/dino/01-tiran/1-blue.jpg')"><img class="menu-img-color" src="img/icon/dino-color/tir-blue.svg"></a></div>
     </div>
+    <div class="text-center display-4">Тираннозавр</div>
   </section>
 
   <!--слайдер-->
@@ -63,6 +89,99 @@
       function l_image (a) {
           document.example_img.src = a;
       }
+  </script>
+
+<!-- слайдер меню-->
+  <script>
+    'use strict';
+    var multiItemSlider = (function () {
+      return function (selector, config) {
+        var
+          _mainElement = document.querySelector(selector), // основный элемент блока
+          _sliderWrapper = _mainElement.querySelector('.slider__wrapper'), // обертка для .slider-item
+          _sliderItems = _mainElement.querySelectorAll('.slider__item'), // элементы (.slider-item)
+          _sliderControls = _mainElement.querySelectorAll('.slider__control'), // элементы управления
+          _sliderControlLeft = _mainElement.querySelector('.slider__control_left'), // кнопка "LEFT"
+          _sliderControlRight = _mainElement.querySelector('.slider__control_right'), // кнопка "RIGHT"
+          _wrapperWidth = parseFloat(getComputedStyle(_sliderWrapper).width), // ширина обёртки
+          _itemWidth = parseFloat(getComputedStyle(_sliderItems[0]).width), // ширина одного элемента
+          _positionLeftItem = 0, // позиция левого активного элемента
+          _transform = 0, // значение транфсофрмации .slider_wrapper
+          _step = _itemWidth / _wrapperWidth * 100, // величина шага (для трансформации)
+          _items = []; // массив элементов
+        // наполнение массива _items
+        _sliderItems.forEach(function (item, index) {
+          _items.push({ item: item, position: index, transform: 0 });
+        });
+
+        var position = {
+          getMin: 0,
+          getMax: _items.length - 1,
+        }
+
+        var _transformItem = function (direction) {
+          if (direction === 'right') {
+            if ((_positionLeftItem + _wrapperWidth / _itemWidth - 1) >= position.getMax) {
+              return;
+            }
+            if (!_sliderControlLeft.classList.contains('slider__control_show')) {
+              _sliderControlLeft.classList.add('slider__control_show');
+            }
+            if (_sliderControlRight.classList.contains('slider__control_show') && (_positionLeftItem + _wrapperWidth / _itemWidth) >= position.getMax) {
+              _sliderControlRight.classList.remove('slider__control_show');
+            }
+            _positionLeftItem++;
+            _transform -= _step;
+          }
+          if (direction === 'left') {
+            if (_positionLeftItem <= position.getMin) {
+              return;
+            }
+            if (!_sliderControlRight.classList.contains('slider__control_show')) {
+              _sliderControlRight.classList.add('slider__control_show');
+            }
+            if (_sliderControlLeft.classList.contains('slider__control_show') && _positionLeftItem - 1 <= position.getMin) {
+              _sliderControlLeft.classList.remove('slider__control_show');
+            }
+            _positionLeftItem--;
+            _transform += _step;
+          }
+          _sliderWrapper.style.transform = 'translateX(' + _transform + '%)';
+        }
+
+        // обработчик события click для кнопок "назад" и "вперед"
+        var _controlClick = function (e) {
+          if (e.target.classList.contains('slider__control')) {
+            e.preventDefault();
+            var direction = e.target.classList.contains('slider__control_right') ? 'right' : 'left';
+            _transformItem(direction);
+          }
+        };
+
+        var _setUpListeners = function () {
+          // добавление к кнопкам "назад" и "вперед" обрботчика _controlClick для событя click
+          _sliderControls.forEach(function (item) {
+            item.addEventListener('click', _controlClick);
+          });
+        }
+
+        // инициализация
+        _setUpListeners();
+
+        return {
+          right: function () { // метод right
+            _transformItem('right');
+          },
+          left: function () { // метод left
+            _transformItem('left');
+          }
+        }
+
+      }
+    }());
+
+    var slider = multiItemSlider('.slider')
+
   </script>
 </main>
 </body>

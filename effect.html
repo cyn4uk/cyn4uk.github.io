@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Title -->
+    <title>video-playframe-studio</title>
+
+    <!-- Required Meta Tags Always Come First -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C500%2C600%2C700%2C800%7CRoboto%3A300%2C400%2C500%2C700%2C900%7CLato%3A300%2C400%2C700%2C900%7CPlayfair+Display%7CRaleway%7CSpectral%7CRubik">
+
+    <!-- CSS Global Compulsory -->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/hamburgers.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/cubeportfolio.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/custombox.min.css">
+
+    <!-- CSS Template -->
+    <link rel="stylesheet" href="css/styles.op-photography.css">
+
+    <!-- CSS Customization -->
+    <link rel="stylesheet" href="css/color.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/video.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/media-video.css">
+  </head>
+
+  <body style="background: url(img/plenka.svg) no-repeat right top/cover, linear-gradient(120deg, #202020, #7B7B7B) no-repeat; height: 100vh">
+    <main class="g-pt-195 g-pt-145--md">
+      <header id="js-header" class="u-header u-header--sticky-top u-header--change-appearance u-header--change-logo p-25-0 bg-mobile"
+              data-header-fix-moment="0">
+        <div class="u-header__section g-transition-0_3 g-py-7 g-pb-10--md"
+             data-header-fix-moment-exclude="g-pb-10--md"
+             data-header-fix-moment-classes="g-bg-img g-pb-25--md bg-purple2">
+          <nav class="navbar navbar-expand-lg g-py-0">
+            <div class="container-fluid g-pos-rel">
+              <!-- Logo -->
+              <a href="index.html" class="js-go-to navbar-brand u-header__logo"
+                 data-type="static">
+                <img class="u-header__logo-img u-header__logo-img--main g-width-140" src="img/logocolortext.svg" alt="Image description">
+                <img class="u-header__logo-img g-width-140" src="img/logocolortext.svg" alt="Image description">
+              </a>
+              <!-- End Logo -->
+              <div class="w-50 text-center display-block-media">
+                <a href="index.html"><img style="width: 25px" src="img/icon/home.svg" alt="Image description"></a>
+              </div>
+              <!-- Navigation -->
+              <div class="collapse navbar-collapse align-items-center flex-sm-row hamburger-mobile-media text-center" id="navBar">
+                <ul id="js-scroll-nav" class="navbar-nav text-uppercase g-letter-spacing-1 g-font-size-14 g-pt-20 g-pt-0--lg">
+                  <li class="nav-item g-mx-15--lg g-mb-7 g-mb-0--lg">
+                    <a href="index.html" class="nav-link p-0">Главная</a>
+                  </li>
+                  <li class="nav-item g-mx-15--lg g-mb-7 g-mb-0--lg">
+                    <a href="motion.html" class="nav-link p-0">Анимация</a>
+                  </li>
+                  <li class="nav-item g-mx-15--lg g-mb-7 g-mb-0--lg">
+                    <a href="web.html" class="nav-link p-0">Веб</a>
+                  </li>
+                  <li class="nav-item g-mx-15--lg g-mb-7 g-mb-0--lg">
+                    <a href="grafic.html" class="nav-link p-0">Графика</a>
+                  </li>
+                  <li class="nav-item g-mx-15--lg g-mb-7 g-mb-0--lg">
+                    <a href="video.html" class="nav-link p-0">Видео</a>
+                  </li>
+                  <li class="nav-item g-mx-15--lg g-mb-7 g-mb-0--lg">
+                    <a href="#!" class="nav-link p-0" style="color: #efb82e">Motion эффекты</a>
+                  </li>
+                  <li class="nav-item g-mx-15--lg g-mb-7 g-mb-0--lg">
+                    <a href="#!" class="js-modal nav-link p-0 display-block-media" data-modal-target="#popupAccordion20" data-modal-effect="fadein">Контакты</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- End Navigation -->
+
+              <div id="popupAccordion20" class="modal-demo g-pa-20">
+                <div class="js-custom-scroll text-center" style="font-size: 1.2rem !important;">
+                  <div class="mt-3">
+                    <p class="mb-2">Санкт-Петербург</p>
+                    <p class="mb-2">+7(921)884-33-92</p>
+                    <p>playframe@mail.ru</p>
+                  </div>
+                  <div class="g-font-weight-600 m-2">
+                    Мы в социальных сетях
+                  </div>
+<!--                  <div class="list-inline-item">-->
+<!--                    <a href="dino/index.html">-->
+<!--                      <svg width="20" height="20" style="fill: #000" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>-->
+<!--                    </a>-->
+<!--                  </div>-->
+                  <div class="list-inline-item g-mr-10">
+                    <a href="https://vk.com/playframestudio">
+                      <svg width="23" height="23" style="fill: #000" viewBox="0 0 24 24"><path class="st0" d="M13.162 18.994c.609 0 .858-.406.851-.915-.031-1.917.714-2.949 2.059-1.604 1.488 1.488 1.796 2.519 3.603 2.519h3.2c.808 0 1.126-.26 1.126-.668 0-.863-1.421-2.386-2.625-3.504-1.686-1.565-1.765-1.602-.313-3.486 1.801-2.339 4.157-5.336 2.073-5.336h-3.981c-.772 0-.828.435-1.103 1.083-.995 2.347-2.886 5.387-3.604 4.922-.751-.485-.407-2.406-.35-5.261.015-.754.011-1.271-1.141-1.539-.629-.145-1.241-.205-1.809-.205-2.273 0-3.841.953-2.95 1.119 1.571.293 1.42 3.692 1.054 5.16-.638 2.556-3.036-2.024-4.035-4.305-.241-.548-.315-.974-1.175-.974h-3.255c-.492 0-.787.16-.787.516 0 .602 2.96 6.72 5.786 9.77 2.756 2.975 5.48 2.708 7.376 2.708z"/></svg>
+                    </a>
+                  </div>
+<!--                  <div class="list-inline-item g-mr-10">-->
+<!--                    <a href="#!">-->
+<!--                      <svg width="21" height="21" style="fill: #000" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>-->
+<!--                    </a>-->
+<!--                  </div>-->
+<!--                  <div class="list-inline-item">-->
+<!--                    <a href="#!">-->
+<!--                      <svg width="22px" height="22px" version="1.1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill: #000; fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;"><path id="telegram-1" d="M18.384,22.779c0.322,0.228 0.737,0.285 1.107,0.145c0.37,-0.141 0.642,-0.457 0.724,-0.84c0.869,-4.084 2.977,-14.421 3.768,-18.136c0.06,-0.28 -0.04,-0.571 -0.26,-0.758c-0.22,-0.187 -0.525,-0.241 -0.797,-0.14c-4.193,1.552 -17.106,6.397 -22.384,8.35c-0.335,0.124 -0.553,0.446 -0.542,0.799c0.012,0.354 0.25,0.661 0.593,0.764c2.367,0.708 5.474,1.693 5.474,1.693c0,0 1.452,4.385 2.209,6.615c0.095,0.28 0.314,0.5 0.603,0.576c0.288,0.075 0.596,-0.004 0.811,-0.207c1.216,-1.148 3.096,-2.923 3.096,-2.923c0,0 3.572,2.619 5.598,4.062Zm-11.01,-8.677l1.679,5.538l0.373,-3.507c0,0 6.487,-5.851 10.185,-9.186c0.108,-0.098 0.123,-0.262 0.033,-0.377c-0.089,-0.115 -0.253,-0.142 -0.376,-0.064c-4.286,2.737 -11.894,7.596 -11.894,7.596Z"/></svg>-->
+<!--                    </a>-->
+<!--                  </div>-->
+                </div>
+              </div>
+
+              <!-- Responsive Toggle Button -->
+              <button class="navbar-toggler btn g-line-height-1 g-brd-none g-pa-0 g-pos-abs g-top-15 g-right-0" style="margin-top: -7px" type="button"
+                      aria-label="Toggle navigation"
+                      aria-expanded="false"
+                      aria-controls="navBar"
+                      data-toggle="collapse"
+                      data-target="#navBar">
+                <span class="hamburger hamburger--slider">
+                  <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                  </span>
+                </span>
+              </button>
+              <!-- End Responsive Toggle Button -->
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      <!-- портфолио -->
+      <section class="container-fluid g-py-20 box-center">
+        <section id="promoblocks g-font-size-16">
+          <div class="row g-mx-minus-25">
+            <div class="col-sm-6 col-lg-4 g-px-30 g-mb-60" >
+                  <a href="https://www.youtube.com/watch?v=u4NGDYJJyos&feature=youtu.be" target="_blank">
+                      <div class="bShadow-5 g-bg-black br-fff box-grafic">
+                          <img class="w-100 g-m-30 img-hover" src="img/video/5.jpg">
+                        <div class="text-center icon-style">
+                          <img class="w-50px g-m-30 opacity-hover" src="img/icon/play-new2.svg">
+                        </div>
+                      </div>
+                      <div class="g-color-gray-light-v3 g-font-size-12 text-center" style="margin-top: -25px">
+                          <span class="p-2">Видеоэффект</span>
+                      </div>
+                  </a>
+              </div>
+            <div class="col-sm-6 col-lg-4 g-px-30 g-mb-60" >
+                  <a href="https://www.youtube.com/watch?v=kZ27cGv0ZBo&feature=youtu.be" target="_blank">
+                      <div class="bShadow-5 g-bg-black br-fff box-grafic">
+                          <img class="w-100 g-m-30 img-hover" src="img/video/6.jpg">
+                        <div class="text-center icon-style">
+                          <img class="w-50px g-m-30 opacity-hover" src="img/icon/play-new2.svg">
+                        </div>
+                      </div>
+                      <div class="g-color-gray-light-v3 g-font-size-12 text-center" style="margin-top: -25px">
+                          <span class="p-2">Видеоэффект</span>
+                      </div>
+                  </a>
+              </div>
+            <div class="col-sm-6 col-lg-4 g-px-30 g-mb-60" >
+                  <a href="https://www.youtube.com/watch?v=rkxCdBFP75g&feature=youtu.be" target="_blank">
+                      <div class="bShadow-5 g-bg-black br-fff box-grafic">
+                          <img class="w-100 g-m-30 img-hover" src="img/video/7.jpg">
+                        <div class="text-center icon-style">
+                          <img class="w-50px g-m-30 opacity-hover" src="img/icon/play-new2.svg">
+                        </div>
+                      </div>
+                      <div class="g-color-gray-light-v3 g-font-size-12 text-center" style="margin-top: -25px">
+                          <span class="p-2">Видеоэффект</span>
+                      </div>
+                  </a>
+              </div>
+          </div>
+        </section>
+        <!-- End Promo Blocks -->
+      </section>
+
+      <!-- Footer -->
+      <footer class="g-bg-black footer-style">
+        <div class="container-fluid" style="padding-right: 10%">
+          <div class="g-color-gray-dark-v5 g-py-30 g-brd">
+            <ul class="list-inline d-inline-block mb-0">
+              <li class="list-inline-item g-font-weight-600">
+                Наши контакты
+              </li>
+              <li class="list-inline-item g-mr-10 mr-2">
+                <div class="d-inline-block float-left"><img class="g-width-20" src="img/icon/footer-map.svg" alt="Image description"></div>
+                <div class="d-inline-block mr-2">Санкт-Петербург</div>
+              </li>
+              <li class="list-inline-item g-mr-10 mr-2">
+                <div class="d-inline-block float-left mr-2"><img class="g-width-10" src="img/icon/footer-phone.svg" alt="Image description"></div>
+                <div class="d-inline-block mr-2">+7(921)884-33-92</div>
+              </li>
+              <li class="list-inline-item g-mr-10">
+                <div class="d-inline-block float-left mr-2"><img class="g-width-15" src="img/icon/footer-email.svg" alt="Image description"></div>
+                <div class="d-inline-block">playframe@mail.ru</div>
+              </li>
+            </ul>
+            <ul class="float-right list-inline d-inline-block mb-0">
+              <li class="list-inline-item g-font-weight-600">
+                Мы в социальных сетях
+              </li>
+<!--              <li class="list-inline-item">-->
+<!--                <a href="dino/index.html">-->
+<!--                  <svg width="12" height="12" class="fill_svg_footer" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>-->
+<!--                </a>-->
+<!--              </li>-->
+              <li class="list-inline-item g-mr-10">
+                <a href="https://vk.com/playframestudio">
+                  <svg width="15" height="15" class="fill_svg_footer" viewBox="0 0 24 24"><path class="st0" d="M13.162 18.994c.609 0 .858-.406.851-.915-.031-1.917.714-2.949 2.059-1.604 1.488 1.488 1.796 2.519 3.603 2.519h3.2c.808 0 1.126-.26 1.126-.668 0-.863-1.421-2.386-2.625-3.504-1.686-1.565-1.765-1.602-.313-3.486 1.801-2.339 4.157-5.336 2.073-5.336h-3.981c-.772 0-.828.435-1.103 1.083-.995 2.347-2.886 5.387-3.604 4.922-.751-.485-.407-2.406-.35-5.261.015-.754.011-1.271-1.141-1.539-.629-.145-1.241-.205-1.809-.205-2.273 0-3.841.953-2.95 1.119 1.571.293 1.42 3.692 1.054 5.16-.638 2.556-3.036-2.024-4.035-4.305-.241-.548-.315-.974-1.175-.974h-3.255c-.492 0-.787.16-.787.516 0 .602 2.96 6.72 5.786 9.77 2.756 2.975 5.48 2.708 7.376 2.708z"/></svg>
+                </a>
+              </li>
+<!--              <li class="list-inline-item g-mr-10">-->
+<!--                <a href="#!">-->
+<!--                  <svg width="13" height="13" class="fill_svg_footer" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>-->
+<!--                </a>-->
+<!--              </li>-->
+<!--              <li class="list-inline-item">-->
+<!--                <a href="#!">-->
+<!--                  <svg width="14px" height="14px" class="fill_svg_footer" version="1.1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;"><path id="telegram-1" d="M18.384,22.779c0.322,0.228 0.737,0.285 1.107,0.145c0.37,-0.141 0.642,-0.457 0.724,-0.84c0.869,-4.084 2.977,-14.421 3.768,-18.136c0.06,-0.28 -0.04,-0.571 -0.26,-0.758c-0.22,-0.187 -0.525,-0.241 -0.797,-0.14c-4.193,1.552 -17.106,6.397 -22.384,8.35c-0.335,0.124 -0.553,0.446 -0.542,0.799c0.012,0.354 0.25,0.661 0.593,0.764c2.367,0.708 5.474,1.693 5.474,1.693c0,0 1.452,4.385 2.209,6.615c0.095,0.28 0.314,0.5 0.603,0.576c0.288,0.075 0.596,-0.004 0.811,-0.207c1.216,-1.148 3.096,-2.923 3.096,-2.923c0,0 3.572,2.619 5.598,4.062Zm-11.01,-8.677l1.679,5.538l0.373,-3.507c0,0 6.487,-5.851 10.185,-9.186c0.108,-0.098 0.123,-0.262 0.033,-0.377c-0.089,-0.115 -0.253,-0.142 -0.376,-0.064c-4.286,2.737 -11.894,7.596 -11.894,7.596Z"/></svg>-->
+<!--                </a>-->
+<!--              </li>-->
+            </ul>
+          </div>
+          <div class="text-right g-color-gray-dark-v5 g-py-10 g-font-size-14">
+                Play Frame Studio 2020-2021
+        </div>
+        </div>
+      </footer>
+
+      <a class="js-go-to u-go-to-v1 text-center" href="#!"
+         data-type="fixed"
+         data-position='{
+           "bottom": 15,
+           "right": 15
+         }'
+         data-offset-top="400"
+         data-compensation="#js-header"
+         data-show-effect="zoomIn">
+        <img class="icon_up" src="img/icon/up.svg">
+      </a>
+    </main>
+
+    <!-- JS Global Compulsory -->
+    <script src="js/jquery/jquery.min.js"></script>
+    <script src="js/jquery/jquery-migrate.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+
+    <!-- JS Implementing Plugins -->
+    <script src="js/appear.js"></script>
+    <script src="js/jquery.cubeportfolio.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/chosen.jquery.js"></script>
+    <script src="js/ImageSelect.jquery.js"></script>
+    <script src="js/circles.min.js"></script>
+
+    <!-- JS Revolution Slider -->
+    <script src="js/revolution-slider/jquery.themepunch.tools.min.js"></script>
+    <script src="js/revolution-slider/jquery.themepunch.revolution.min.js"></script>
+    <script src='js/revolution-slider/revolution.addon.slicey.min.js'></script>
+    <script src="js/revolution-slider/revolution.extension.actions.min.js"></script>
+    <script src="js/revolution-slider/revolution.extension.carousel.min.js"></script>
+    <script src="js/revolution-slider/revolution.extension.kenburn.min.js"></script>
+    <script src="js/revolution-slider/revolution.extension.layeranimation.min.js"></script>
+    <script src="js/revolution-slider/revolution.extension.migration.min.js"></script>
+    <script src="js/revolution-slider/revolution.extension.navigation.min.js"></script>
+    <script src="js/revolution-slider/revolution.extension.parallax.min.js"></script>
+    <script src="js/revolution-slider/revolution.extension.slideanims.min.js"></script>
+    <script src="js/revolution-slider/revolution.extension.video.min.js"></script>
+
+    <script src="js/jquery/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/jquery/jquery.fancybox.min.js"></script>
+    <script src="js/custombox.min.js"></script>
+
+    <!-- JS Unify -->
+    <script src="js/hs.core.js"></script>
+    <script src="js/hs.header.js"></script>
+    <script src="js/hs.hamburgers.js"></script>
+    <script src="js/hs.scroll-nav.js"></script>
+    <script src="js/hs.cubeportfolio.js"></script>
+    <script src="js/hs.carousel.js"></script>
+    <script src="js/hs.go-to.js"></script>
+
+    <script src="js/hs.onscroll-animation.js"></script>
+    <script src="js/hs.tabs.js"></script>
+    <script src="js/hs.popup.js"></script>
+    <script src="js/hs.scrollbar.js"></script>
+    <script src="js/hs.modal-window.js"></script>
+
+    <!--оживание видео-->
+    <script  src="js/video.js"></script>
+
+    <script>
+        // initialization of google map
+        function initMap() {
+            var i = 1;
+
+            $.HSCore.components.HSPopup.init('.js-fancybox-google-map', {
+                touch: false,
+                afterShow: function() {
+                    if (i > 1) return;
+
+                    // initialization of google maps
+                    $.HSCore.components.HSGMap.init('.js-g-map');
+
+                    i++;
+                }
+            });
+
+            var i_2 = 1;
+
+            $.HSCore.components.HSModalWindow.init('.js-modal-google-map', {
+                onComplete: function() {
+                    if (i_2 > 1) return;
+
+                    // initialization of google maps
+                    $.HSCore.components.HSGMap.init('.js-g-map-2');
+
+                    i_2++;
+                }
+            });
+        }
+
+        $(document).on('ready', function () {
+            // initialization of custom scrollbar
+            $.HSCore.components.HSScrollBar.init($('.js-custom-scroll'));
+
+            // initialization of popups
+            $.HSCore.components.HSPopup.init('.js-fancybox', {
+                touch: false
+            });
+
+            $.HSCore.components.HSModalWindow.init('.js-modal');
+
+            var i2 = 1;
+
+            $.HSCore.components.HSPopup.init('.js-fancybox-carousel', {
+                touch: false,
+                afterShow: function() {
+                    if (i2 > 1) return;
+
+                    // custom functions
+                    $('#carousel5').on('click', '.js-thumb', function (e) {
+                        e.stopPropagation();
+                        //Variables
+                        var ii;
+
+                        //Variables values
+                        ii = $(this).data('slick-index');
+
+                        if ($('#carousel5').slick('slickCurrentSlide') !== ii) {
+                            $('#carousel5').slick('slickGoTo', ii);
+                        }
+                    });
+
+                    // initialization of carousel
+                    $.HSCore.components.HSCarousel.init('.js-carousel-init');
+
+                    i2++;
+                }
+            });
+
+            var i2_2 = 1;
+
+            $.HSCore.components.HSModalWindow.init('.js-modal-carousel', {
+                onComplete: function() {
+                    if (i2_2 > 1) return;
+
+                    // custom functions
+                    $('#carousel5-2').on('click', '.js-thumb', function (e) {
+                        e.stopPropagation();
+                        //Variables
+                        var ii2;
+
+                        //Variables values
+                        ii2 = $(this).data('slick-index');
+
+                        if ($('#carousel5-2').slick('slickCurrentSlide') !== ii2) {
+                            $('#carousel5-2').slick('slickGoTo', ii2);
+                        }
+                    });
+
+                    // initialization of carousel
+                    $.HSCore.components.HSCarousel.init('.js-carousel-2-init');
+
+                    i2_2++;
+                }
+            });
+
+            // initialization of tabs
+            $.HSCore.components.HSTabs.init('[role="tablist"]');
+
+            // initialization of forms
+            $.HSCore.components.HSSelect.init('.js-custom-select');
+            $.HSCore.helpers.HSFileAttachments.init();
+            $.HSCore.components.HSFileAttachment.init('.js-file-attachment');
+            $.HSCore.helpers.HSRating.init();
+            $.HSCore.components.HSDatepicker.init('#datepickerDefault, #datepickerDefault2');
+            $.HSCore.components.HSSlider.init('#regularSlider, #regularSlider2');
+            $.HSCore.components.HSMaskedInput.init('[data-mask]');
+            $.HSCore.components.HSCountQty.init('.js-quantity');
+            $.HSCore.components.HSAutocomplete.init('#autocomplete, #autocomplete2');
+
+            // initialization of parallax
+            $('.dzsparallaxer').dzsparallaxer();
+
+            var i3 = 1;
+
+            $.HSCore.components.HSPopup.init('.js-fancybox-bg-video', {
+                touch: false,
+                afterShow: function() {
+                    if (i3 > 1) return;
+
+                    // initialization of video on background
+                    $.HSCore.helpers.HSBgVideo.init('.js-bg-video');
+
+                    i3++;
+                }
+            });
+
+            var i3_2 = 1;
+
+            $.HSCore.components.HSModalWindow.init('.js-modal-bg-video', {
+                onComplete: function() {
+                    if (i3_2 > 1) return;
+
+                    // initialization of video on background
+                    $.HSCore.helpers.HSBgVideo.init('.js-bg-video-2');
+
+                    i3_2++;
+                }
+            });
+
+            // initialization of peity charts
+            $.HSCore.components.HSChart.peity.init($('.js-peity-chart'));
+
+            var i4 = 1;
+
+            $.HSCore.components.HSPopup.init('.js-fancybox-pie', {
+                touch: false,
+                afterShow: function() {
+                    if (i4 > 1) return;
+
+                    // initialization of chart pies
+                    var items = $.HSCore.components.HSChartPie.init('.js-pie');
+
+                    i4++;
+                }
+            });
+
+            var i4_2 = 1;
+
+            $.HSCore.components.HSModalWindow.init('.js-modal-pie', {
+                onComplete: function() {
+                    if (i4_2 > 1) return;
+
+                    // initialization of chart pies
+                    var items = $.HSCore.components.HSChartPie.init('.js-pie-2');
+
+                    i4_2++;
+                }
+            });
+
+            var i5 = 1;
+
+            $.HSCore.components.HSPopup.init('.js-fancybox-counter', {
+                touch: false,
+                afterShow: function() {
+                    if (i5 > 1) return;
+
+                    // initialization of counters
+                    var counters = $.HSCore.components.HSCounter.init('[class*="js-counter"]');
+
+                    i5++;
+                }
+            });
+
+            var i5_2 = 1;
+
+            $.HSCore.components.HSModalWindow.init('.js-modal-counter', {
+                onComplete: function() {
+                    if (i5_2 > 1) return;
+
+                    // initialization of counters
+                    var counters = $.HSCore.components.HSCounter.init('.js-counter-2');
+
+                    i5_2++;
+                }
+            });
+
+            var i6 = 1;
+
+            $.HSCore.components.HSPopup.init('.js-fancybox-countdown', {
+                touch: false,
+                afterShow: function() {
+                    if (i6 > 1) return;
+
+                    // initialization of countdowns
+                    var countdowns = $.HSCore.components.HSCountdown.init('.js-countdown', {
+                        yearsElSelector: '.js-cd-years',
+                        monthElSelector: '.js-cd-month',
+                        daysElSelector: '.js-cd-days',
+                        hoursElSelector: '.js-cd-hours',
+                        minutesElSelector: '.js-cd-minutes',
+                        secondsElSelector: '.js-cd-seconds'
+                    });
+
+                    i6++;
+                }
+            });
+
+            var i6_2 = 1;
+
+            $.HSCore.components.HSModalWindow.init('.js-modal-countdown', {
+                onComplete: function() {
+                    if (i6_2 > 1) return;
+
+                    // initialization of countdowns
+                    var countdowns = $.HSCore.components.HSCountdown.init('.js-countdown-2', {
+                        yearsElSelector: '.js-cd-years-2',
+                        monthElSelector: '.js-cd-month-2',
+                        daysElSelector: '.js-cd-days-2',
+                        hoursElSelector: '.js-cd-hours-2',
+                        minutesElSelector: '.js-cd-minutes-2',
+                        secondsElSelector: '.js-cd-seconds-2'
+                    });
+
+                    i6_2++;
+                }
+            });
+
+            var i7 = 1;
+
+            $.HSCore.components.HSPopup.init('.js-fancybox-cubeportfolio', {
+                touch: false,
+                afterShow: function() {
+                    if (i7 > 1) return;
+
+                    // initialization of cubeportfolio
+                    $.HSCore.components.HSCubeportfolio.init('.js-cbp');
+
+                    i7++;
+                }
+            });
+
+            var i7_2 = 1;
+
+            $.HSCore.components.HSModalWindow.init('.js-modal-cubeportfolio', {
+                onComplete: function() {
+                    if (i7_2 > 1) return;
+
+                    // initialization of cubeportfolio
+                    $.HSCore.components.HSCubeportfolio.init('.js-cbp-2');
+
+                    i7_2++;
+                }
+            });
+
+            // initialization of HSDropdown component
+            $.HSCore.components.HSDropdown.init($('[data-dropdown-target]'), {
+                afterOpen: function(){
+                    $(this).find('input[type="search"]').focus();
+                }
+            });
+
+            var markers1 = {
+                    0: {
+                        "image_url": "../../assets/img-temp/400x270/img1.jpg",
+                        "date": "17:48, April 27, 2015",
+                        "location": "South Africa",
+                        "title": "Proin egestas purus eget1",
+                        "coords": {
+                            "lat": "149",
+                            "long": "168"
+                        }
+                    },
+                    1: {
+                        "image_url": "../../assets/img-temp/400x270/img2.jpg",
+                        "date": "17:48, April 27, 2015",
+                        "location": "South Africa",
+                        "title": "Proin egestas purus eget2",
+                        "coords": {
+                            "lat": "179",
+                            "long": "205"
+                        }
+                    },
+                    2: {
+                        "image_url": "../../assets/img-temp/400x270/img3.jpg",
+                        "date": "17:48, April 27, 2015",
+                        "location": "South Africa",
+                        "title": "Proin egestas purus eget3",
+                        "coords": {
+                            "lat": "241",
+                            "long": "373"
+                        }
+                    },
+                    3: {
+                        "image_url": "../../assets/img-temp/400x270/img4.jpg",
+                        "date": "17:48, April 27, 2015",
+                        "location": "South Africa",
+                        "title": "Proin egestas purus eget4",
+                        "coords": {
+                            "lat": "543",
+                            "long": "244"
+                        }
+                    },
+                    4: {
+                        "image_url": "../../assets/img-temp/400x270/img5.jpg",
+                        "date": "17:48, April 27, 2015",
+                        "location": "South Africa",
+                        "title": "Proin egestas purus eget5",
+                        "coords": {
+                            "lat": "601",
+                            "long": "268"
+                        }
+                    },
+                    5: {
+                        "image_url": "../../assets/img-temp/400x270/img6.jpg",
+                        "date": "17:48, April 27, 2015",
+                        "location": "South Africa",
+                        "title": "Proin egestas purus eget6",
+                        "coords": {
+                            "lat": "636",
+                            "long": "260"
+                        }
+                    },
+                    6: {
+                        "image_url": "../../assets/img-temp/400x270/img7.jpg",
+                        "date": "117:48, April 27, 2015",
+                        "location": "South Africa",
+                        "title": "Proin egestas purus eget7",
+                        "coords": {
+                            "lat": "614",
+                            "long": "118"
+                        }
+                    },
+                    7: {
+                        "image_url": "../../assets/img-temp/400x270/img8.jpg",
+                        "date": "17:48, April 27, 2015",
+                        "location": "South Africa",
+                        "title": "Proin egestas purus eget8",
+                        "coords": {
+                            "lat": "701",
+                            "long": "70.125"
+                        }
+                    },
+                    8: {
+                        "image_url": "../../assets/img-temp/400x270/img17.jpg",
+                        "date": "17:48, April 27, 2015",
+                        "location": "South Africa",
+                        "title": "Proin egestas purus eget9",
+                        "coords": {
+                            "lat": "950",
+                            "long": "177"
+                        }
+                    },
+                    9: {
+                        "image_url": "../../assets/img-temp/400x270/img15.jpg",
+                        "date": "17:48, April 27, 2015",
+                        "location": "South Africa",
+                        "title": "Proin egestas purus eget10",
+                        "coords": {
+                            "lat": "1079",
+                            "long": "463"
+                        }
+                    },
+                    10: {
+                        "image_url": "../../assets/img-temp/400x270/img7.jpg",
+                        "date": "17:48, April 27, 2015",
+                        "location": "South Africa",
+                        "title": "Proin egestas purus eget 11",
+                        "coords": {
+                            "lat": "717",
+                            "long": "455"
+                        }
+                    },
+                    11: {
+                        "image_url": "../../assets/img-temp/400x270/img5.jpg",
+                        "date": "17:48, April 27, 2015",
+                        "location": "South Africa",
+                        "title": "Proin egestas purus eget 12",
+                        "coords": {
+                            "lat": "625",
+                            "long": "510"
+                        }
+                    },
+                    canvas: {
+                        src: '../../assets/img/maps/map.svg',
+                        width: 1170,
+                        height: 594
+                    }
+                },
+                i8 = 1;
+
+            $.HSCore.components.HSPopup.init('.js-fancybox-pin-map', {
+                touch: false,
+                afterShow: function() {
+                    if (i8 > 1) return;
+
+                    // initialization of pin map
+                    $.HSCore.components.HSPinMap.init('.js-pin-map', {
+                        data: {
+                            "map-pin": markers1
+                        }
+                    });
+
+                    i8++;
+                }
+            });
+
+            var i8_2 = 1;
+
+            $.HSCore.components.HSModalWindow.init('.js-modal-pin-map', {
+                onComplete: function() {
+                    if (i8_2 > 1) return;
+
+                    // initialization of pin map
+                    $.HSCore.components.HSPinMap.init('.js-pin-map-2', {
+                        data: {
+                            "map-pin": markers1
+                        }
+                    });
+
+                    i8_2++;
+                }
+            });
+
+            var countriesBgColors1 = {
+                    "AF": 16.63,
+                    "AL": 11.58,
+                    "DZ": 158.97,
+                    "AO": 85.81,
+                    "AG": 1.1,
+                    "AR": 351.02,
+                    "AM": 8.83,
+                    "AU": 1219.72,
+                    "AT": 366.26,
+                    "AZ": 52.17,
+                    "BS": 7.54,
+                    "BH": 21.73,
+                    "BD": 105.4,
+                    "BB": 3.96,
+                    "BY": 52.89,
+                    "BE": 461.33,
+                    "BZ": 1.43,
+                    "BJ": 6.49,
+                    "BT": 1.4,
+                    "BO": 19.18,
+                    "BA": 16.2,
+                    "BW": 12.5,
+                    "BR": 2023.53,
+                    "BN": 11.96,
+                    "BG": 44.84,
+                    "BF": 8.67,
+                    "BI": 1.47,
+                    "KH": 11.36,
+                    "CM": 21.88,
+                    "CA": 1563.66,
+                    "CV": 1.57,
+                    "CF": 2.11,
+                    "TD": 7.59,
+                    "CL": 199.18,
+                    "CN": 5745.13,
+                    "CO": 283.11,
+                    "KM": 0.56,
+                    "CD": 12.6,
+                    "CG": 11.88,
+                    "CR": 35.02,
+                    "CI": 22.38,
+                    "HR": 59.92,
+                    "CY": 22.75,
+                    "CZ": 195.23,
+                    "DK": 304.56,
+                    "DJ": 1.14,
+                    "DM": 0.38,
+                    "DO": 50.87,
+                    "EC": 61.49,
+                    "EG": 216.83,
+                    "SV": 21.8,
+                    "GQ": 14.55,
+                    "ER": 2.25,
+                    "EE": 19.22,
+                    "ET": 30.94,
+                    "FJ": 3.15,
+                    "FI": 231.98,
+                    "FR": 2555.44,
+                    "GA": 12.56,
+                    "GM": 1.04,
+                    "GE": 11.23,
+                    "DE": 3305.9,
+                    "GH": 18.06,
+                    "GR": 305.01,
+                    "GD": 0.65,
+                    "GT": 40.77,
+                    "GN": 4.34,
+                    "GW": 0.83,
+                    "GY": 2.2,
+                    "HT": 6.5,
+                    "HN": 15.34,
+                    "HK": 226.49,
+                    "HU": 132.28,
+                    "IS": 12.77,
+                    "IN": 1430.02,
+                    "ID": 695.06,
+                    "IR": 337.9,
+                    "IQ": 84.14,
+                    "IE": 204.14,
+                    "IL": 201.25,
+                    "IT": 2036.69,
+                    "JM": 13.74,
+                    "JP": 5390.9,
+                    "JO": 27.13,
+                    "KZ": 129.76,
+                    "KE": 32.42,
+                    "KI": 0.15,
+                    "KR": 986.26,
+                    "KW": 117.32,
+                    "KG": 4.44,
+                    "LA": 6.34,
+                    "LV": 23.39,
+                    "LB": 39.15,
+                    "LS": 1.8,
+                    "LR": 0.98,
+                    "LY": 77.91,
+                    "LT": 35.73,
+                    "LU": 52.43,
+                    "MK": 9.58,
+                    "MG": 8.33,
+                    "MW": 5.04,
+                    "MY": 218.95,
+                    "MV": 1.43,
+                    "ML": 9.08,
+                    "MT": 7.8,
+                    "MR": 3.49,
+                    "MU": 9.43,
+                    "MX": 1004.04,
+                    "MD": 5.36,
+                    "MN": 5.81,
+                    "ME": 3.88,
+                    "MA": 91.7,
+                    "MZ": 10.21,
+                    "MM": 35.65,
+                    "NA": 11.45,
+                    "NP": 15.11,
+                    "NL": 770.31,
+                    "NZ": 138,
+                    "NI": 6.38,
+                    "NE": 5.6,
+                    "NG": 206.66,
+                    "NO": 413.51,
+                    "OM": 53.78,
+                    "PK": 174.79,
+                    "PA": 27.2,
+                    "PG": 8.81,
+                    "PY": 17.17,
+                    "PE": 153.55,
+                    "PH": 189.06,
+                    "PL": 438.88,
+                    "PT": 223.7,
+                    "QA": 126.52,
+                    "RO": 158.39,
+                    "RU": 1476.91,
+                    "RW": 5.69,
+                    "WS": 0.55,
+                    "ST": 0.19,
+                    "SA": 434.44,
+                    "SN": 12.66,
+                    "RS": 38.92,
+                    "SC": 0.92,
+                    "SL": 1.9,
+                    "SG": 217.38,
+                    "SK": 86.26,
+                    "SI": 46.44,
+                    "SB": 0.67,
+                    "ZA": 354.41,
+                    "ES": 1374.78,
+                    "LK": 48.24,
+                    "KN": 0.56,
+                    "LC": 1,
+                    "VC": 0.58,
+                    "SD": 65.93,
+                    "SR": 3.3,
+                    "SZ": 3.17,
+                    "SE": 444.59,
+                    "CH": 522.44,
+                    "SY": 59.63,
+                    "TW": 426.98,
+                    "TJ": 5.58,
+                    "TZ": 22.43,
+                    "TH": 312.61,
+                    "TL": 0.62,
+                    "TG": 3.07,
+                    "TO": 0.3,
+                    "TT": 21.2,
+                    "TN": 43.86,
+                    "TR": 729.05,
+                    "TM": 0,
+                    "UG": 17.12,
+                    "UA": 136.56,
+                    "AE": 239.65,
+                    "GB": 2258.57,
+                    "US": 14624.18,
+                    "UY": 40.71,
+                    "UZ": 37.72,
+                    "VU": 0.72,
+                    "VE": 285.21,
+                    "VN": 101.99,
+                    "YE": 30.02,
+                    "ZM": 15.69,
+                    "ZW": 5.57
+                },
+                i9 = 1;
+
+            $.HSCore.components.HSPopup.init('.js-fancybox-svg-map', {
+                touch: false,
+                afterShow: function() {
+                    if (i9 > 1) return;
+
+                    // initialization of SVG map
+                    $.HSCore.components.HSSvgMap.init('#vmap', {
+                        series: {
+                            regions: [{
+                                scale: ['#C8EEFF', '#0071A4'],
+                                normalizeFunction: 'polynomial',
+                                values: countriesBgColors1
+                            }]
+                        }
+                    });
+
+                    // custom functions
+                    var mapObj = $('#vmap').vectorMap('get', 'mapObject');
+
+                    $('#australia').on('click', function (e) {
+                        e.preventDefault();
+                        mapObj.setFocus({
+                            region: 'AU'
+                        });
+                    });
+
+                    $('#australiaAndJapan').on('click', function (e) {
+                        e.preventDefault();
+                        mapObj.setFocus({
+                            regions: ['AU', 'JP']
+                        });
+                    });
+
+                    $('#initialState').on('click', function (e) {
+                        e.preventDefault();
+                        mapObj.setFocus({
+                            x: 0.5,
+                            y: 0.5,
+                            scale: 1
+                        });
+                    });
+
+                    i9++;
+                }
+            });
+
+            var i9_2 = 1;
+
+            $.HSCore.components.HSModalWindow.init('.js-modal-svg-map', {
+                onComplete: function() {
+                    if (i9_2 > 1) return;
+
+                    // initialization of SVG map
+                    $.HSCore.components.HSSvgMap.init('#vmap2', {
+                        series: {
+                            regions: [{
+                                scale: ['#C8EEFF', '#0071A4'],
+                                normalizeFunction: 'polynomial',
+                                values: countriesBgColors1
+                            }]
+                        }
+                    });
+
+                    // custom functions
+                    var mapObj = $('#vmap2').vectorMap('get', 'mapObject');
+
+                    $('#australia2').on('click', function (e) {
+                        e.preventDefault();
+                        mapObj.setFocus({
+                            region: 'AU'
+                        });
+                    });
+
+                    $('#australiaAndJapan2').on('click', function (e) {
+                        e.preventDefault();
+                        mapObj.setFocus({
+                            regions: ['AU', 'JP']
+                        });
+                    });
+
+                    $('#initialState2').on('click', function (e) {
+                        e.preventDefault();
+                        mapObj.setFocus({
+                            x: 0.5,
+                            y: 0.5,
+                            scale: 1
+                        });
+                    });
+
+                    i9_2++;
+                }
+            });
+
+            var i10 = 1;
+
+            $.HSCore.components.HSPopup.init('.js-fancybox-video', {
+                touch: false,
+                afterShow: function() {
+                    if (i10 > 1) return;
+
+                    // initialization of custom video
+                    $.HSCore.components.HSVideoAudio.init('.js-video-audio');
+
+                    i10++;
+                }
+            });
+
+            var i10_2 = 1;
+
+            $.HSCore.components.HSModalWindow.init('.js-modal-video', {
+                onComplete: function() {
+                    if (i10_2 > 1) return;
+
+                    // initialization of custom video
+                    $.HSCore.components.HSVideoAudio.init('.js-video-audio-2');
+
+                    i10_2++;
+                }
+            });
+        });
+
+        $(window).on('resize', function () {
+            setTimeout(function () {
+                $.HSCore.components.HSTabs.init('[role="tablist"]');
+            }, 200);
+        });
+    </script>
+
+
+  </body>
+</html>
